@@ -1,0 +1,3 @@
+echo "Welcome to my shell script."
+echo "This is one of my first shell scripts ! "
+echo "Shell script programming is a tool for helping users automate their tasks."

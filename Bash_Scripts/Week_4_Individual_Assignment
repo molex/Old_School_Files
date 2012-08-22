@@ -1,0 +1,21 @@
+#!/bin/bash
+FILES="*"
+COUNTER=0
+for f in $FILES ;
+do 
+   num_keyword=`grep -o $2 $f |wc -l`
+   if [ $num_keyword -gt $COUNTER ]; 
+   then
+   COUNTER=$num_keyword
+   key_file=$f
+   else
+   COUNTER=0
+   fi
+done
+if [ $COUNTER -eq 0 ];
+then
+echo "No file with word $2 found in directory $1"
+else
+echo "file $key_file: found $COUNTER occurences of word $2"
+fi
+

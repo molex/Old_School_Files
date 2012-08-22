@@ -1,0 +1,14 @@
+#!/bin/bash
+#num_files= `ls $1 | wc -l`
+#echo there are $num_files files in directory $1
+for file in $1 
+do 
+word_appears=`grep -o $2 |wc -l`
+ if [word_appears = 0]
+then
+echo No file with word $2 found in directory $1
+elif [word_appears > 0]
+then
+echo file $file: found $word_appears occurences of word $2
+fi
+done

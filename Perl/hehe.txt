@@ -1,0 +1,6 @@
+#/usr/local/bin/perl
+print "enter String: \n";
+$fred = <STDIN>;
+print "enter number: \n";
+$num = <STDIN>;
+print $fred x $num

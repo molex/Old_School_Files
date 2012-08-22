@@ -1,0 +1,14 @@
+{
+  "name": "Print Extension",
+  "version": "3.5",
+  "description": "Prints Pages in Chrome", 
+  "icons": { "16": "printer16.png",
+             "32": "printer32.png",
+             "48": "printer48.png",
+             "128": "printer128.png" },
+  "background_page":"background.html",
+  "permissions": ["http://*.google.com/", "https://*.google.com/"],
+  "browser_action": {
+    "default_icon": "printer48.png",
+	"default_title": "Print This Page"}
+}

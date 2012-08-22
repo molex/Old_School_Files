@@ -1,0 +1,28 @@
+incomming:pop.secureserver.net 
+outgoing:smtpout.secureserver.net 
+
+In the Internet E-mail Settings window, go to the Outgoing Server tab. Check My outgoing server (SMTP) requires authentication and select Use same settings as my incoming mail server. 
+
+Go to the Advanced tab. Verify that you have 110 for your incoming server (POP3) and 80 for your outgoing server (SMTP), and then click OK. 
+
+NOTE: If you have trouble sending email you can also try 25 or 3535 for your outgoing server (SMTP) port.
+
+
+Welcome to wmt.secureserver.net 
+ 
+  Setup your account for wmt.secureserver.net
+Your wmt.secureserver.net account will give you access to the hosted services enabled for your domain. 
+
+
+    
+Name:  Web Master 
+  
+Login name:  webmaster_899985@wmt.secureserver.net 
+
+ftp.m1cr0sux0r.com
+username:molex333
+password:M0l3x666
+  
+ 
+
+

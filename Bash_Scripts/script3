@@ -1,0 +1,12 @@
+#!/bin/bash
+for f in $1 ;
+do 
+   word_appears = `grep -o "$2" "$f" |wc -l`
+ if [$word_appears -eq 0];
+then
+echo "No file with word $2 found in directory $1"
+elif [$word_appears -gt 0];
+then
+echo "file $f: found $word_appears occurences of word $2"
+fi
+done

@@ -1,0 +1,11 @@
+{
+  "name": "Google Bookmark Adder",
+  "version": "1.0",
+  "description": "Prints Pages in Chrome", 
+  "icons": { "16": "bookmark16.png"},
+  "background_page":"background.html",
+  "permissions": ["http://*.google.com/", "https://*.google.com/"],
+  "browser_action": {
+    "default_icon": "bookmark16.png",
+	"default_title": "Add to Google Bookmarks"}
+}

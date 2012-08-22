@@ -1,0 +1,14 @@
+#!/bin/bash
+echo What is your name?
+read name
+
+case $name in
+ [Mm]ichael )
+          echo "me too!";;
+ [Mm]ike )
+       echo "What a coinicednce"; 
+       echo "Me too!";;
+ * ) 
+  echo "That's a nice name";;
+esac
+

@@ -1,0 +1,8 @@
+var sel=window.getSelection(); if(!sel.isCollapsed){var rng=sel.getRangeAt(0); if(!rng.collapsed){var docfrag=rng.cloneContents(); if(!document.getElementById(%22divHideMe%22)){var rng2=document.createRange(); rng2.selectNodeContents(document.body); var myContainer=document.createElement(%22DIV%22); rng2.surroundContents(myContainer); myContainer.setAttribute(%22id%22,%22divHideMe%22); rng2.detach();} myContainer.style.display=%22none%22; if(document.getElementById(%22printFrag%22)){var myFrag=document.getElementById(%22printFrag%22); while(myFrag.firstChild) {myFrag.removeChild(myFrag.firstChild);} myFrag.style.display=%22block%22;}else{var myFrag=document.createElement(%22DIV%22); myFrag.setAttribute(%22id%22,%22printFrag%22); document.body.appendChild(myFrag);} myFrag.appendChild(docfrag); rng.detach(); var myP=document.createElement(%22P%22); myFrag.appendChild(myP); myP.setAttribute(%22id%22,%22killBtn%22); 
+
+
+
+
+
+
+var myBtn=document.createElement(%22INPUT%22); myP.appendChild(myBtn); myBtn.setAttribute(%22type%22,%22button%22); myBtn.setAttribute(%22value%22,%22Return to Page%22); myBtn.setAttribute(%22onclick%22,%22document.getElementById(%27divHideMe%27).style.display=%27block%27; document.getElementById(%27printFrag%27).style.display=%27none%27;%22); myStyle=document.createElement(%22STYLE%22); myFrag.appendChild(myStyle); myStyle.setAttribute(%22type%22,%22text/css%22); myStyle.setAttribute(%22media%22,%22print%22); myStyle.innerHTML=%22#killBtn{display:none}%22;}} void 0;

@@ -1,0 +1,8 @@
+
+ Start  Stop   Length Name                   Class
+ 00000H 03D9FH 03DA0H _text                  code                  
+ 03DA0H 04601H 00862H _data                  data                  
+ 04602H 04681H 00080H dummy                  dummy                 
+ 04682H 04682H 00000H const                  const                 
+ 04682H 046BBH 0003AH _bss                   bss                   
+ 046C0H 046DFH 00020H c_common               bss                   

@@ -1,0 +1,102 @@
+
+typedef unsigned int size_t;
+typedef struct {
+int	_file;			int	_flag;			unsigned _bufsiz;		char	*_ptr;			int	_cnt;			char	*_base;		} FILE;
+extern	FILE _files[32];
+FILE *fopen(char *name, char *mode);
+int   fclose(FILE *fp);
+int   fread(void *buf, int sizelem, int n, FILE *fp);
+int   fwrite(void *buffer,int sizelem, int n,FILE *fp);
+int   feof(FILE *fp);
+int   ferror(FILE *fp);
+int   fflush(FILE *fp);
+void  clearerr(FILE *fp);
+int   fseek(FILE *fp,long offset,int origin);
+long  ftell(FILE *fp);
+int   fscanf(FILE *fp,char *format,...);
+int   scanf(char *format,...);
+int   sscanf(char *buf, char *fmt, ...);
+int   fprintf(FILE *fp, char *fmt, ...);
+int   printf(char *fmt, ...);
+int   sprintf(char *buf, char *fmt, ...);
+int   vsprintf(char *buf, char *fmt, char *args);
+int   fgetc(FILE *fp);
+char *fgets(char *buf, int n, FILE *fp);
+int   getc(FILE *fp);
+int   getchar();
+char *gets(char *buf);
+int   ungetc(int c, FILE *fp);
+int   fputc(int c, FILE *fp);
+int   fputs(char *str, FILE *fp);
+int   putc(int c, FILE *fp);
+int   putchar(int c);
+int   puts(char *str);
+int sportsQuestion(void);
+int geographyQuestion(void);
+void pause(int);
+int giResponse = 0;
+main()
+{
+do {
+system("clear");
+printf("\n\tTHE TRIVIA GAME\n\n");
+printf("1 \t Sports\n");
+printf("2\t Geography\n");
+printf("3\t Quit\n");
+printf("\n\n Enter your selection: ");
+scanf("%d", &giResponse);
+switch(giResponse) {
+case 1:
+if (sportsQuestion() == 4)
+printf("\nCorrect!\n");
+else
+printf("\nIncorrect\n");
+pause(2);
+break;
+case 2:
+if (geographyQuestion() == 2)
+printf("\nCorrect!\n");
+else
+printf("\nIncorrect\n");
+pause(2);
+break;
+}		
+}while (giResponse !=3); 
+}
+int sportsQuestion(void)
+{
+int iAnswer = 0;
+system("clear");
+printf("\tSports Question\n");
+printf("\nWhat University did NFL star Deon Sanders attend? ");
+printf("\n\n1\t University of Miami\n");
+printf("2\t California State University\n");
+printf("3\t Indiana University\n");
+printf("4\t Florida State University\n");
+printf("\n Enter your selection: ");
+scanf("%d", &iAnswer);
+return iAnswer;
+}
+int geographyQuestion(void)
+{
+int iAnswer = 0;
+system("clear");
+printf("\t Geography Question\n");
+printf("\n What is the state capital of Florida? ");
+printf("\n\n1\t Pensacola\n");
+printf("2\t Tallahassee\n");
+printf("3\t Jacksonville\n");
+printf("4\t Miami\n");
+printf("\n Enter your selection: ");
+scanf("%d", &iAnswer);
+return iAnswer;
+}
+void pause(int inNum)
+{
+int iCurrentTime = 0;
+int iElapsedTime = 0;
+iCurrentTime = time(0);
+do{
+iElapsedTime = time(0);
+} while ( (iElapsedTime - iCurrentTime) < inNum );
+}

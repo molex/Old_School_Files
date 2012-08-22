@@ -1,0 +1,32 @@
+#!/bin/bash
+#Mike Brown 
+echo   Here are my answers to the 3 questions you asked. 
+echo   1. What is the purpose of the echo command?
+echo   The purpose of the echo command is to write a statement to the screen for the user.
+echo
+echo   2. In the case statement why are the first letters both caps and lower case?
+echo   The letters are both capital and lowercase and inside of a bracket because this is a type of
+echo   pattern matching or regular expression that is used in programs. 
+echo   This way the answer will be excepted if the user enters the first 
+echo   letter as a capital or lowercase. Otherwise the only accepted answer would be capital.
+echo   This saves on confusion for the user.
+echo
+echo   3. What does esac mean? 
+echo   ESAC is CASE backwards. It signifies to the program that the case statement is finished.
+echo
+
+echo Now Here is the script I wrote!
+
+echo What is your name?
+read name
+
+case $name in
+ [Mm]ichael )
+           echo "me too!";;
+ [Mm]ike ) 
+        echo "What a coinicednce";
+        echo "Me too!";;
+ * ) 
+  echo "That's a nice name";;
+esac
+

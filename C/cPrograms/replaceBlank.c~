@@ -1,0 +1,33 @@
+#include<stdio.h>
+/*Copy input to output and replace any extra spaces with a single space */
+main()
+{
+     int c,sp;
+     
+     sp = 0;
+     while((c = getchar()) != EOF)
+     {
+          putchar(c);
+
+          if (c == ' ')
+          {
+               ++sp;
+               
+               if(sp >= 1)
+               {
+                    c = "\b";
+                    putchar(c);
+               }
+               
+          }
+          else
+          {
+               sp = 0;
+          }
+          
+
+
+          
+     }
+     
+}

@@ -1,0 +1,4 @@
+#!usr/local/bin/perl
+print "please enter a list of items \n";
+chomp(@list = <STDIN>);
+print sort @list;

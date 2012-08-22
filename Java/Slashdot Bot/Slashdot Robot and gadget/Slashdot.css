@@ -1,0 +1,108 @@
+.gfg-root {	
+  width : 100%;
+  height : auto;
+  position : relative;
+  overflow : hidden;
+  text-align : center;
+  font-family: "Arial", sans-serif;
+  font-size: 12px;
+  border: 1px solid #006666;
+}
+
+.gfg-title {
+  font-size: 14px;
+  font-weight : bold;
+  color : #FFFFFF;
+  background-color: #006666;
+  line-height : 1.4em;
+  overflow : hidden;
+  white-space : pre-wrap;
+}
+
+.gfg-title a {
+  color : #006666;
+}
+
+
+
+.gfg-subtitle {
+  font-size: 12px;
+  font-weight : bold;
+  color : #FFFFFF;
+  background-color: #006666;
+  line-height : 1.4em;
+  overflow : hidden;
+  white-space : pre-wrap;
+  margin-bottom : 5px;
+}
+
+.gfg-subtitle a {
+  color : #FFFFFF;
+}
+
+.gfg-entry {
+  background-color : white;
+  color : #006666;
+  width : 80%;
+  height : 6.9em;
+  position : relative;
+  overflow : hidden;
+  text-align : left;
+  margin-top : 3px;
+ 
+}
+.gfg-entry img
+{
+	
+	float:right;
+}
+
+/* To allow correct behavior for overlay */
+.gfg-root .gfg-entry .gf-result {
+  position : relative;
+  background-color : white;
+  width : auto;
+  height : 100%;
+  padding-left : 20px;
+  padding-right : 5px;
+}
+
+.gfg-list 
+{
+  padding-left: 20px;	
+  padding-right : 5px;
+  position : relative;
+  overflow : hidden;
+  text-align : left;
+  margin-bottom : 5px;
+}
+
+.gfg-listentry 
+{
+ 
+ background-color : #FFFFFF; 
+ color: #006666;
+}
+
+
+/*
+ * FeedControl customizations.
+ */
+
+.gfg-root .gfg-entry .gf-result .gf-title 
+{
+  color : #006666;
+  font-size: 14px;
+  line-height : 1.2em;
+  overflow : hidden;
+  white-space : pre-wrap;
+  margin-bottom : 2px;
+}
+
+.gfg-root .gfg-entry .gf-result .gf-snippet  {
+  height : 3.8em;
+  color: #000000;
+  margin-top : 3px;
+  
+}
+

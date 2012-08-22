@@ -1,0 +1,1251 @@
+PROGRAM LISTING e:\cygwin\home\administrator\source_code\trivia compiled Sun Aug 10 22:55:07 2008
+
+
+*1*
+typedef unsigned int name0 sep 
+typedef unsigned int size_t;
+
+*2*
+typedef struct '{' int name1 sep int name1 sep unsigned name0 sep char name1 sep int name1 sep char name1 sep '}' name0 sep 
+typedef struct { int _file;   int _flag;   unsigned _bufsiz;  char *_ptr;   int _cnt;   char *_base;  } FILE;
+
+*3*
+extern utype name0 '[' int ']' sep 
+extern FILE _files[32];
+
+*4*
+utype name0 '(' char name0 ',' char name0 ')' sep 
+FILE *fopen(char *name, char *mode);
+
+*5*
+int name0 '(' utype name0 ')' sep 
+int   fclose(FILE *fp);
+
+*6*
+int name0 '(' void name0 ',' int name0 ',' int name0 ',' utype name0 ')' sep 
+int   fread(void *buf, int sizelem, int n, FILE *fp);
+
+*7*
+int name0 '(' void name0 ',' int name0 ',' int name0 ',' utype name0 ')' sep 
+int   fwrite(void *buffer,int sizelem, int n,FILE *fp);
+
+*8*
+int name0 '(' utype name0 ')' sep 
+int   feof(FILE *fp);
+
+*9*
+int name0 '(' utype name0 ')' sep 
+int   ferror(FILE *fp);
+
+*10*
+int name0 '(' utype name0 ')' sep 
+int   fflush(FILE *fp);
+
+*11*
+void name0 '(' utype name0 ')' sep 
+void  clearerr(FILE *fp);
+
+*12*
+int name0 '(' utype name0 ',' long name0 ',' int name0 ')' sep 
+int   fseek(FILE *fp,long offset,int origin);
+
+*13*
+long name0 '(' utype name0 ')' sep 
+long  ftell(FILE *fp);
+
+*14*
+int name0 '(' utype name0 ',' char name0 ',' ... ')' sep 
+int   fscanf(FILE *fp,char *format,...);
+
+*15*
+int name0 '(' char name0 ',' ... ')' sep 
+int   scanf(char *format,...);
+
+*16*
+int name0 '(' char name0 ',' char name0 ',' ... ')' sep 
+int   sscanf(char *buf, char *fmt, ...);
+
+*17*
+int name0 '(' utype name0 ',' char name0 ',' ... ')' sep 
+int   fprintf(FILE *fp, char *fmt, ...);
+
+*18*
+int name0 '(' char name0 ',' ... ')' sep 
+int   printf(char *fmt, ...);
+
+*19*
+int name0 '(' char name0 ',' char name0 ',' ... ')' sep 
+int   sprintf(char *buf, char *fmt, ...);
+
+*20*
+int name0 '(' char name0 ',' char name0 ',' char name0 ')' sep 
+int   vsprintf(char *buf, char *fmt, char *args);
+
+*21*
+int name0 '(' utype name0 ')' sep 
+int   fgetc(FILE *fp);
+
+*22*
+char name0 '(' char name0 ',' int name0 ',' utype name0 ')' sep 
+char *fgets(char *buf, int n, FILE *fp);
+
+*23*
+int name0 '(' utype name0 ')' sep 
+int   getc(FILE *fp);
+
+*24*
+int name0 '(' ')' sep 
+int   getchar();
+
+*25*
+char name0 '(' char name0 ')' sep 
+char *gets(char *buf);
+
+*26*
+int name0 '(' int name0 ',' utype name0 ')' sep 
+int   ungetc(int c, FILE *fp);
+
+*27*
+int name0 '(' int name0 ',' utype name0 ')' sep 
+int   fputc(int c, FILE *fp);
+
+*28*
+int name0 '(' char name0 ',' utype name0 ')' sep 
+int   fputs(char *str, FILE *fp);
+
+*29*
+int name0 '(' int name0 ',' utype name0 ')' sep 
+int   putc(int c, FILE *fp);
+
+*30*
+int name0 '(' int name0 ')' sep 
+int   putchar(int c);
+
+*31*
+int name0 '(' char name0 ')' sep 
+int   puts(char *str);
+
+*32*
+int name0 '(' void ')' sep 
+int sportsQuestion(void);
+
+*33*
+int name0 '(' void ')' sep 
+int geographyQuestion(void);
+
+*34*
+void name0 '(' int ')' sep 
+void pause(int);
+
+*35*
+int name0 '=' int sep doinit type 'int', ilistx 0, darix -1
+
+constant exgen
+exgen i=0 epix=1
+ 0: number (0,2,0) 
+
+int giResponse = 0;
+
+*36*
+name0 '(' ')' '{' 
+main() {
+
+*37*
+do 
+do
+
+*38*
+'{' name0 '(' string ')' sep 
+variable exgen
+exgen i=2 epix=3
+ 0: fun (32,2,0) 
+ 1: string (4,1,0) 
+ 2: fcall (0,0,200001) [1]  
+
+variable exgen
+exgen i=1 epix=0
+
+variable exgen
+exgen i=0 epix=0
+
+{ system("clear");
+
+*39*
+fun '(' string ')' sep 
+variable exgen
+exgen i=2 epix=3
+ 0: fun (14,2,0) 
+ 1: string (10,2,0) 
+ 2: fcall (0,0,1) [1]  
+
+variable exgen
+exgen i=1 epix=0
+
+variable exgen
+exgen i=0 epix=0
+
+printf("\n\tTHE TRIVIA GAME\n\n");
+
+*40*
+fun '(' string ')' sep 
+variable exgen
+exgen i=2 epix=3
+ 0: fun (14,2,0) 
+ 1: string (30,3,0) 
+ 2: fcall (0,0,1) [1]  
+
+variable exgen
+exgen i=1 epix=0
+
+variable exgen
+exgen i=0 epix=0
+
+printf("1 \t Sports\n");
+
+*41*
+fun '(' string ')' sep 
+variable exgen
+exgen i=2 epix=3
+ 0: fun (14,2,0) 
+ 1: string (42,4,0) 
+ 2: fcall (0,0,1) [1]  
+
+variable exgen
+exgen i=1 epix=0
+
+variable exgen
+exgen i=0 epix=0
+
+printf("2\t Geography\n");
+
+*42*
+fun '(' string ')' sep 
+variable exgen
+exgen i=2 epix=3
+ 0: fun (14,2,0) 
+ 1: string (56,5,0) 
+ 2: fcall (0,0,1) [1]  
+
+variable exgen
+exgen i=1 epix=0
+
+variable exgen
+exgen i=0 epix=0
+
+printf("3\t Quit\n");
+
+*43*
+fun '(' string ')' sep 
+variable exgen
+exgen i=2 epix=3
+ 0: fun (14,2,0) 
+ 1: string (65,6,0) 
+ 2: fcall (0,0,1) [1]  
+
+variable exgen
+exgen i=1 epix=0
+
+variable exgen
+exgen i=0 epix=0
+
+printf("\n\n Enter your selection: ");
+
+*44*
+fun '(' string ',' '&' glb ')' sep 
+variable exgen
+exgen i=4 epix=5
+ 0: fun (11,2,0) 
+ 1: string (91,7,0) 
+ 2: global (1,0,1) 
+ 3: adr (2,0,1) 
+ 4: fcall (0,0,2) [1,3]  
+
+variable exgen
+exgen i=3 epix=0
+
+variable exgen
+exgen i=2 epix=0
+
+variable exgen
+exgen i=1 epix=0
+
+variable exgen
+exgen i=0 epix=0
+
+scanf("%d", &giResponse);
+
+*45*
+switch '(' glb ')' 
+variable exgen
+exgen i=0 epix=1
+ 0: global (1,2,0) 
+'{' case int ':' if '(' fun '(' ')' eq int ')' 
+variable exgen
+exgen i=3 epix=4
+ 0: fun (28,2,0) 
+ 1: fcall (0,0,0) []  
+ 2: number (4,2,1) 
+ 3: cmpr (1,2,0) 
+
+variable exgen
+exgen i=1 epix=0
+
+variable exgen
+exgen i=0 epix=0
+
+variable exgen
+exgen i=2 epix=0
+
+switch(giResponse) { case 1: if (sportsQuestion() == 4)
+
+*46*
+fun '(' string ')' sep 
+variable exgen
+exgen i=2 epix=3
+ 0: fun (14,2,0) 
+ 1: string (94,8,0) 
+ 2: fcall (0,0,1) [1]  
+
+variable exgen
+exgen i=1 epix=0
+
+variable exgen
+exgen i=0 epix=0
+
+printf("\nCorrect!\n");
+
+*47*
+else fun '(' string ')' sep 
+variable exgen
+exgen i=2 epix=3
+ 0: fun (14,2,0) 
+ 1: string (105,9,0) 
+ 2: fcall (0,0,1) [1]  
+
+variable exgen
+exgen i=1 epix=0
+
+variable exgen
+exgen i=0 epix=0
+
+else printf("\nIncorrect\n");
+
+*48*
+fun '(' int ')' sep 
+variable exgen
+exgen i=2 epix=3
+ 0: fun (30,2,0) 
+ 1: number (2,2,0) 
+ 2: fcall (0,0,1) [1]  
+
+variable exgen
+exgen i=1 epix=0
+
+variable exgen
+exgen i=0 epix=0
+
+pause(2);
+
+*49*
+break sep 
+break;
+
+*50*
+case int ':' if '(' fun '(' ')' eq int ')' 
+variable exgen
+exgen i=3 epix=4
+ 0: fun (29,2,0) 
+ 1: fcall (0,0,0) []  
+ 2: number (2,2,1) 
+ 3: cmpr (1,2,0) 
+
+variable exgen
+exgen i=1 epix=0
+
+variable exgen
+exgen i=0 epix=0
+
+variable exgen
+exgen i=2 epix=0
+
+case 2: if (geographyQuestion() == 2)
+
+*51*
+fun '(' string ')' sep 
+variable exgen
+exgen i=2 epix=3
+ 0: fun (14,2,0) 
+ 1: string (117,10,0) 
+ 2: fcall (0,0,1) [1]  
+
+variable exgen
+exgen i=1 epix=0
+
+variable exgen
+exgen i=0 epix=0
+
+printf("\nCorrect!\n");
+
+*52*
+else fun '(' string ')' sep 
+variable exgen
+exgen i=2 epix=3
+ 0: fun (14,2,0) 
+ 1: string (128,11,0) 
+ 2: fcall (0,0,1) [1]  
+
+variable exgen
+exgen i=1 epix=0
+
+variable exgen
+exgen i=0 epix=0
+
+else printf("\nIncorrect\n");
+
+*53*
+fun '(' int ')' sep 
+variable exgen
+exgen i=2 epix=3
+ 0: fun (30,2,0) 
+ 1: number (2,2,0) 
+ 2: fcall (0,0,1) [1]  
+
+variable exgen
+exgen i=1 epix=0
+
+variable exgen
+exgen i=0 epix=0
+
+pause(2);
+
+*54*
+break sep 
+break;
+
+*55*
+'}' 
+}
+
+*56*
+'}' 
+}
+
+*57*
+while '(' glb ne int ')' sep 
+variable exgen
+exgen i=2 epix=3
+ 0: global (1,2,0) 
+ 1: number (3,2,0) 
+ 2: cmpr (0,1,1) 
+
+variable exgen
+exgen i=0 epix=0
+
+variable exgen
+exgen i=1 epix=0
+
+while (giResponse !=3);
+
+*58*
+'}' 
+}
+
+*59*
+
+local variables:
+
+locals by index:
+ 0: 
+ 1: 
+ 2: 
+ 3: 
+ 4: 
+ 5: 
+ 6: 
+ 7: 
+ 8: 
+ 9: 
+10: 
+11: 
+12: 
+13: 
+14: 
+15: 
+16: 
+17: 
+18: 
+19: 
+20: 
+21: 
+22: 
+23: 
+24: 
+25: 
+
+0 local statics
+
+there are 0 local typedefs
+
+labels
+
+
+there are 0 local enumeration types
+
+there are 0 local structs/unions
+
+int fun '(' void ')' '{' 
+int sportsQuestion(void) {
+
+*60*
+int name0 '=' int sep doinit type 'int', ilistx 0, darix -1
+
+variable exgen
+exgen i=0 epix=1
+ 0: number (0,2,0) 
+
+int iAnswer = 0;
+
+*61*
+fun 
+system
+
+*62*
+'(' string ')' sep 
+variable exgen
+exgen i=2 epix=3
+ 0: fun (32,2,0) 
+ 1: string (140,12,0) 
+ 2: fcall (0,0,1) [1]  
+
+variable exgen
+exgen i=1 epix=0
+
+variable exgen
+exgen i=0 epix=0
+
+("clear");
+
+*63*
+fun '(' string ')' sep 
+variable exgen
+exgen i=2 epix=3
+ 0: fun (14,2,0) 
+ 1: string (146,13,0) 
+ 2: fcall (0,0,1) [1]  
+
+variable exgen
+exgen i=1 epix=0
+
+variable exgen
+exgen i=0 epix=0
+
+printf("\tSports Question\n");
+
+*64*
+fun '(' string ')' sep 
+variable exgen
+exgen i=2 epix=3
+ 0: fun (14,2,0) 
+ 1: string (164,14,0) 
+ 2: fcall (0,0,1) [1]  
+
+variable exgen
+exgen i=1 epix=0
+
+variable exgen
+exgen i=0 epix=0
+
+printf("\nWhat University did NFL star Deon Sanders attend? ");
+
+*65*
+fun '(' string ')' sep 
+variable exgen
+exgen i=2 epix=3
+ 0: fun (14,2,0) 
+ 1: string (216,15,0) 
+ 2: fcall (0,0,1) [1]  
+
+variable exgen
+exgen i=1 epix=0
+
+variable exgen
+exgen i=0 epix=0
+
+printf("\n\n1\t University of Miami\n");
+
+*66*
+fun '(' string ')' sep 
+variable exgen
+exgen i=2 epix=3
+ 0: fun (14,2,0) 
+ 1: string (242,16,0) 
+ 2: fcall (0,0,1) [1]  
+
+variable exgen
+exgen i=1 epix=0
+
+variable exgen
+exgen i=0 epix=0
+
+printf("2\t California State University\n");
+
+*67*
+fun '(' string ')' sep 
+variable exgen
+exgen i=2 epix=3
+ 0: fun (14,2,0) 
+ 1: string (274,17,0) 
+ 2: fcall (0,0,1) [1]  
+
+variable exgen
+exgen i=1 epix=0
+
+variable exgen
+exgen i=0 epix=0
+
+printf("3\t Indiana University\n");
+
+*68*
+fun '(' string ')' sep 
+variable exgen
+exgen i=2 epix=3
+ 0: fun (14,2,0) 
+ 1: string (297,18,0) 
+ 2: fcall (0,0,1) [1]  
+
+variable exgen
+exgen i=1 epix=0
+
+variable exgen
+exgen i=0 epix=0
+
+printf("4\t Florida State University\n");
+
+*69*
+fun '(' string ')' sep 
+variable exgen
+exgen i=2 epix=3
+ 0: fun (14,2,0) 
+ 1: string (326,19,0) 
+ 2: fcall (0,0,1) [1]  
+
+variable exgen
+exgen i=1 epix=0
+
+variable exgen
+exgen i=0 epix=0
+
+printf("\n Enter your selection: ");
+
+*70*
+fun '(' string ',' '&' local ')' sep 
+variable exgen
+exgen i=4 epix=5
+ 0: fun (11,2,0) 
+ 1: string (351,20,0) 
+ 2: local (0,0,1) 
+ 3: adr (2,2,0) 
+ 4: fcall (0,0,2) [1,3]  
+
+variable exgen
+exgen i=3 epix=0
+
+variable exgen
+exgen i=2 epix=0
+
+variable exgen
+exgen i=1 epix=0
+
+variable exgen
+exgen i=0 epix=0
+
+scanf("%d", &iAnswer);
+
+*71*
+return local sep 
+variable exgen
+exgen i=0 epix=1
+ 0: local (0,2,0) 
+
+return iAnswer;
+
+*72*
+'}' 
+}
+
+*73*
+
+local variables:
+  0	  -1    iAnswer :	       2, int
+
+locals by index:
+ 0: 
+ 1: 
+ 2: 
+ 3: 
+ 4: 
+ 5: 
+ 6: 
+ 7: 
+ 8: iAnswer 
+ 9: 
+10: 
+11: 
+12: 
+13: 
+14: 
+15: 
+16: 
+17: 
+18: 
+19: 
+20: 
+21: 
+22: 
+23: 
+24: 
+25: 
+
+0 local statics
+
+there are 0 local typedefs
+
+labels
+
+
+there are 0 local enumeration types
+
+there are 0 local structs/unions
+
+int fun '(' void ')' '{' 
+int geographyQuestion(void) {
+
+*74*
+int name0 '=' int sep doinit type 'int', ilistx 0, darix -1
+
+variable exgen
+exgen i=0 epix=1
+ 0: number (0,2,0) 
+
+int iAnswer = 0;
+
+*75*
+fun 
+system
+
+*76*
+'(' string ')' sep 
+variable exgen
+exgen i=2 epix=3
+ 0: fun (32,2,0) 
+ 1: string (354,21,0) 
+ 2: fcall (0,0,1) [1]  
+
+variable exgen
+exgen i=1 epix=0
+
+variable exgen
+exgen i=0 epix=0
+
+("clear");
+
+*77*
+fun '(' string ')' sep 
+variable exgen
+exgen i=2 epix=3
+ 0: fun (14,2,0) 
+ 1: string (360,22,0) 
+ 2: fcall (0,0,1) [1]  
+
+variable exgen
+exgen i=1 epix=0
+
+variable exgen
+exgen i=0 epix=0
+
+printf("\t Geography Question\n");
+
+*78*
+fun '(' string ')' sep 
+variable exgen
+exgen i=2 epix=3
+ 0: fun (14,2,0) 
+ 1: string (382,23,0) 
+ 2: fcall (0,0,1) [1]  
+
+variable exgen
+exgen i=1 epix=0
+
+variable exgen
+exgen i=0 epix=0
+
+printf("\n What is the state capital of Florida? ");
+
+*79*
+fun '(' string ')' sep 
+variable exgen
+exgen i=2 epix=3
+ 0: fun (14,2,0) 
+ 1: string (423,24,0) 
+ 2: fcall (0,0,1) [1]  
+
+variable exgen
+exgen i=1 epix=0
+
+variable exgen
+exgen i=0 epix=0
+
+printf("\n\n1\t Pensacola\n");
+
+*80*
+fun '(' string ')' sep 
+variable exgen
+exgen i=2 epix=3
+ 0: fun (14,2,0) 
+ 1: string (439,25,0) 
+ 2: fcall (0,0,1) [1]  
+
+variable exgen
+exgen i=1 epix=0
+
+variable exgen
+exgen i=0 epix=0
+
+printf("2\t Tallahassee\n");
+
+*81*
+fun '(' string ')' sep 
+variable exgen
+exgen i=2 epix=3
+ 0: fun (14,2,0) 
+ 1: string (455,26,0) 
+ 2: fcall (0,0,1) [1]  
+
+variable exgen
+exgen i=1 epix=0
+
+variable exgen
+exgen i=0 epix=0
+
+printf("3\t Jacksonville\n");
+
+*82*
+fun '(' string ')' sep 
+variable exgen
+exgen i=2 epix=3
+ 0: fun (14,2,0) 
+ 1: string (472,27,0) 
+ 2: fcall (0,0,1) [1]  
+
+variable exgen
+exgen i=1 epix=0
+
+variable exgen
+exgen i=0 epix=0
+
+printf("4\t Miami\n");
+
+*83*
+fun '(' string ')' sep 
+variable exgen
+exgen i=2 epix=3
+ 0: fun (14,2,0) 
+ 1: string (482,28,0) 
+ 2: fcall (0,0,1) [1]  
+
+variable exgen
+exgen i=1 epix=0
+
+variable exgen
+exgen i=0 epix=0
+
+printf("\n Enter your selection: ");
+
+*84*
+fun '(' string ',' '&' local ')' sep 
+variable exgen
+exgen i=4 epix=5
+ 0: fun (11,2,0) 
+ 1: string (507,29,0) 
+ 2: local (0,0,1) 
+ 3: adr (2,2,0) 
+ 4: fcall (0,0,2) [1,3]  
+
+variable exgen
+exgen i=3 epix=0
+
+variable exgen
+exgen i=2 epix=0
+
+variable exgen
+exgen i=1 epix=0
+
+variable exgen
+exgen i=0 epix=0
+
+scanf("%d", &iAnswer);
+
+*85*
+return local sep 
+variable exgen
+exgen i=0 epix=1
+ 0: local (0,2,0) 
+
+return iAnswer;
+
+*86*
+'}' 
+}
+
+*87*
+
+local variables:
+  0	  -1    iAnswer :	       2, int
+
+locals by index:
+ 0: 
+ 1: 
+ 2: 
+ 3: 
+ 4: 
+ 5: 
+ 6: 
+ 7: 
+ 8: iAnswer 
+ 9: 
+10: 
+11: 
+12: 
+13: 
+14: 
+15: 
+16: 
+17: 
+18: 
+19: 
+20: 
+21: 
+22: 
+23: 
+24: 
+25: 
+
+0 local statics
+
+there are 0 local typedefs
+
+labels
+
+
+there are 0 local enumeration types
+
+there are 0 local structs/unions
+
+void fun '(' int name0 ')' '{' 
+void pause(int inNum) {
+
+*88*
+int name0 '=' int sep doinit type 'int', ilistx 0, darix -1
+
+variable exgen
+exgen i=0 epix=1
+ 0: number (0,2,0) 
+
+int iCurrentTime = 0;
+
+*89*
+int name0 '=' int sep doinit type 'int', ilistx 0, darix -1
+
+variable exgen
+exgen i=0 epix=1
+ 0: number (0,2,0) 
+
+int iElapsedTime = 0;
+
+*90*
+local 
+iCurrentTime
+
+*91*
+'=' name0 '(' int ')' sep 
+variable exgen
+exgen i=4 epix=5
+ 0: local (1,2,0) 
+ 1: fun (33,29,0) 
+ 2: number (0,2,1) 
+ 3: fcall (1,0,210001) [2]  
+ 4: asg (0,3,2) 
+
+variable exgen
+exgen i=0 epix=0
+
+variable exgen
+exgen i=3 epix=0
+
+variable exgen
+exgen i=2 epix=0
+
+variable exgen
+exgen i=1 epix=0
+
+= time(0);
+
+*92*
+do '{' local '=' fun '(' int ')' sep 
+variable exgen
+exgen i=4 epix=5
+ 0: local (2,2,0) 
+ 1: fun (33,29,0) 
+ 2: number (0,2,1) 
+ 3: fcall (1,0,1) [2]  
+ 4: asg (0,3,2) 
+
+variable exgen
+exgen i=0 epix=0
+
+variable exgen
+exgen i=3 epix=0
+
+variable exgen
+exgen i=2 epix=0
+
+variable exgen
+exgen i=1 epix=0
+
+do{ iElapsedTime = time(0);
+
+*93*
+'}' 
+}
+
+*94*
+while '(' '(' local '-' local ')' lt local ')' sep 
+variable exgen
+exgen i=4 epix=5
+ 0: local (2,2,0) 
+ 1: local (1,29,0) 
+ 2: sub (0,1,1) 
+ 3: local (0,0,1) 
+ 4: cmpr (2,3,3) 
+
+variable exgen
+exgen i=2 epix=0
+
+variable exgen
+exgen i=0 epix=0
+
+variable exgen
+exgen i=1 epix=0
+
+variable exgen
+exgen i=3 epix=0
+
+while ( (iElapsedTime - iCurrentTime) < inNum );
+
+*95*
+'}' 
+}
+
+*96*
+
+local variables:
+  0	   2      inNum :	       2, int
+  1	  -1 iCurrentTime :	       2, int
+  2	  -2 iElapsedTime :	       2, int
+
+locals by index:
+ 0: 
+ 1: 
+ 2: 
+ 3: 
+ 4: 
+ 5: 
+ 6: 
+ 7: 
+ 8: inNum iCurrentTime iElapsedTime 
+ 9: 
+10: 
+11: 
+12: 
+13: 
+14: 
+15: 
+16: 
+17: 
+18: 
+19: 
+20: 
+21: 
+22: 
+23: 
+24: 
+25: 
+
+0 local statics
+
+there are 0 local typedefs
+
+labels
+
+
+there are 0 local enumeration types
+
+there are 0 local structs/unions
+
+eof 
+1% cg used
+
+*96*
+
+functions by index:
+ 0: 
+ 1: 
+ 2: clearerr 
+ 3: 
+ 4: 
+ 5: fopen fclose fread fwrite feof ferror fflush fseek ftell fscanf fprintf fgetc fgets fputc fputs 
+ 6: getc getchar gets geographyQuestion 
+ 7: 
+ 8: 
+ 9: 
+10: 
+11: 
+12: main 
+13: 
+14: 
+15: printf putc putchar puts pause 
+16: 
+17: 
+18: scanf sscanf sprintf sportsQuestion system 
+19: time 
+20: ungetc 
+21: vsprintf 
+22: 
+23: 
+24: 
+25: 
+
+globals by index:
+ 0: 
+ 1: 
+ 2: 
+ 3: 
+ 4: 
+ 5: 
+ 6: giResponse 
+ 7: 
+ 8: 
+ 9: 
+10: 
+11: 
+12: 
+13: 
+14: 
+15: 
+16: 
+17: 
+18: 
+19: 
+20: 
+21: 
+22: 
+23: 
+24: 
+25: 
+
+intern:	sportsQuestion geographyQuestion pause main 
+
+extern:	fopen fclose fread fwrite feof ferror fflush clearerr 
+	fseek ftell fscanf scanf sscanf fprintf printf sprintf 
+	vsprintf fgetc fgets getc getchar gets ungetc fputc 
+	fputs putc putchar puts system time 
+
+
+function types:
+  0    **struct $0	parms:   *char   *char
+  1            int	parms: *struct $0
+  2            int	parms:   *void     int     int *struct $0
+  3           void	parms: *struct $0
+  4            int	parms: *struct $0    long     int
+  5           long	parms: *struct $0
+  6            int	parms: *struct $0   *char ...
+  7            int	parms:   *char ...
+  8            int	parms:   *char   *char ...
+  9            int	parms:   *char   *char   *char
+ 10         **char	parms:   *char     int *struct $0
+ 11            int	parms:
+ 12         **char	parms:   *char
+ 13            int	parms:     int *struct $0
+ 14            int	parms:   *char *struct $0
+ 15            int	parms:     int
+ 16            int	parms:   *char
+ 17            int	parms:
+ 18            int	parms:
+ 19           void	parms:     int
+ 20            int	parms:
+
+functions:
+  0          fopen	type=   0
+  1         fclose	type=   1
+  2          fread	type=   2
+  3         fwrite	type=   2
+  4           feof	type=   1
+  5         ferror	type=   1
+  6         fflush	type=   1
+  7       clearerr	type=   3
+  8          fseek	type=   4
+  9          ftell	type=   5
+ 10         fscanf	type=   6
+ 11          scanf	type=   7
+ 12         sscanf	type=   8
+ 13        fprintf	type=   6
+ 14         printf	type=   7
+ 15        sprintf	type=   8
+ 16       vsprintf	type=   9
+ 17          fgetc	type=   1
+ 18          fgets	type=  10
+ 19           getc	type=   1
+ 20        getchar	type=  11
+ 21           gets	type=  12
+ 22         ungetc	type=  13
+ 23          fputc	type=  13
+ 24          fputs	type=  14
+ 25           putc	type=  13
+ 26        putchar	type=  15
+ 27           puts	type=  16
+ 28 sportsQuestion	type=  17
+ 29geographyQuestion	type=  18
+ 30          pause	type=  19
+ 31           main	type=  20
+ 32         system	type=  16
+ 33           time	type=  15
+
+function offsets:
+ sportsQuestion	offs= 435
+geographyQuestion	offs= 672
+          pause	offs= 909
+           main	offs= 0
+
+there are 2 globals:
+           name     type siz x d offs type
+         _files    10080 384 1 0    0 struct $0 [32]
+     giResponse        2   2 0 1    2 int
+
+there are 2 global typedefs
+         size_t            uint
+           FILE       struct $0
+
+there are 0 global enumeration types
+
+there are 1 global structs/unions
+struct $0:  (size 12)
+	     _file  +0      int 
+	     _flag  +2      int 
+	   _bufsiz  +4      uint 
+	      _ptr  +6      *char 
+	      _cnt  +8      int 
+	     _base  +10     *char 
+
+static size=510
+
+totalmalloc=0

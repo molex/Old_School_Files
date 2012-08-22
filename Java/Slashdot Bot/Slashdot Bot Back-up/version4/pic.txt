@@ -1,0 +1,26 @@
+var loadImage = new Image;
+loadImage.src = "http://www.m1cr0sux0r.com/topicslashdot.gif";
+
+
+
+
+var el2 = opt_element || this.nodes.result;
+
+el2.appendChild(logo);
+
+
+
+ var logo = document.createElement('div');
+  logo.className = 'gfg-logo';
+  logo.innerHTML = '<img src="http://www.m1cr0sux0r.com/topicslashdot.gif" alt="Slashdot Logo" href="http://www.slashdot.org">';
+  newTitle.appendChild(logo);
+  
+var logo = document.createElement('div');
+logo.className = 'gfg-logo';
+  logo.innerHTML = '<img src="http://www.m1cr0sux0r.com/topicslashdot.gif" alt="Slashdot Logo" href="http://www.slashdot.org">';
+  result.appendChild(logo);
+
+var logo = document.createElement('div');
+    logo.className = 'gfg-logo';
+    logo.innerHTML = '<img src="http://www.m1cr0sux0r.com/topicslashdot.gif" alt="Slashdot Logo" href="http://www.slashdot.org">';
+  this.nodes.entry.appendChild(logo);

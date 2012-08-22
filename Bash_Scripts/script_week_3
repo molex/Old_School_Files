@@ -1,0 +1,21 @@
+#!/bin/bash
+
+echo Select a country from the following list:
+
+echo America, Italy, France, Germany
+
+read country
+
+ 
+
+case $country in
+
+   [Aa]merica   ) echo Ford; echo Perhpas;;
+
+   [Ii]taly     ) echo Ferarri;echo no;;
+
+   [Ff]rance    ) echo Peugeot ;echo no way;;
+
+   [Gg]ermany   ) echo Porsche ;echo yes;; 
+
+esac
