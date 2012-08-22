@@ -1,0 +1,114 @@
+/* Created by Michael Brown
+The file home.htm links to this stylesheet. */
+
+body{
+font-size: 12pt;
+font-family: arial,helvetica,sans-serif;
+color: black;
+background-color:slategray;}
+
+#container{
+margin-left: auto;
+margin-right: auto;
+width:1200px;}
+
+#sidebar{
+font-size: 12pt;
+height:650px;
+width: 200px;
+float: left;
+color: white;
+background-color: chocolate;
+border: black thick solid;
+text-align: center;}
+
+#rightbar{
+font-size: 12pt;
+height:650px;
+width: 200px;
+float: left;
+color: white;
+background-color: chocolate;
+border: black thick solid;
+text-align: center;}
+
+a{
+font-weight: bold;
+font-size: 12pt;
+color: navy;}
+
+#banner{
+text-align: center;
+border: black thick solid;
+background-color: chocolate;
+}
+
+#sidebar a:link{
+font-size: 12pt;
+color: white;
+background-color: chocolate;
+padding: .5em;
+text-align: center;
+font-weight: bold;
+display: block;}
+
+#sidebar a:visited{
+font-size: 12pt;
+padding: .5em;
+color: black;
+text-decoration: none;
+display: block;}
+
+#sidebar a:hover{
+font-size: 14pt;
+font-weight: bold;
+color: gold;
+background-color: orange;
+text-decoration: underline;
+border: white solid thin;}
+
+#main{
+float: left;
+height:630px;
+width: 716px;
+padding: 1em;
+font-size: 11pt;
+font-family: arial,helvetica,sans-serif;
+color: black;
+background-color: white;
+border-left: orange solid 1em;
+border-right: orange solid 1em;
+background-color: wheat;
+text-align: left;}
+
+h3{
+color: black;}
+
+em{
+color: green;
+font-weight: bold;}
+
+img{
+margin-bottom: 1em;
+border-width: 0;}
+
+img.align{
+border-width: 0;
+margin-right: 1em;
+margin-bottom: 0;
+vertical-align: middle;}
+
+ul{
+vertical-align= "bottom"}
+
+li{
+text-align: left;
+font-size: 10pt;
+color: maroon;
+font-weight:bold;
+vertical-align: bottom;}
+
+
+.center{
+text-align: center;
+}

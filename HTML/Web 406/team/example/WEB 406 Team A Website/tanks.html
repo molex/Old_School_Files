@@ -1,0 +1,78 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 TRANSITIONAL//EN">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<html>
+
+	<head>
+		<title></title>
+		<script language="JavaScript">
+//here you place the ids of every element you want.
+var ids=new Array('blue','yellow','red');
+
+function switchid(id){	
+	hideallids();
+	showdiv(id);
+}
+
+function hideallids(){
+	//loop through the array and hide each element by id
+	for (var i=0;i<ids.length;i++){
+		hidediv(ids[i]);
+	}		  
+}
+
+function hidediv(id) {
+	//safe function to hide an element with a specified id
+	if (document.getElementById) { // DOM3 = IE5, NS6
+		document.getElementById(id).style.display = 'none';
+	}
+	else {
+		if (document.layers) { // Netscape 4
+			document.id.display = 'none';
+		}
+		else { // IE 4
+			document.all.id.style.display = 'none';
+		}
+	}
+}
+
+function showdiv(id) {
+	//safe function to show an element with a specified id
+		  
+	if (document.getElementById) { // DOM3 = IE5, NS6
+		document.getElementById(id).style.display = 'block';
+	}
+	else {
+		if (document.layers) { // Netscape 4
+			document.id.display = 'block';
+		}
+		else { // IE 4
+			document.all.id.style.display = 'block';
+		}
+	}
+}
+</script>
+	</head>
+	<body>
+
+	<div id='blue' style="display:block;">
+<img src="Images/20litecylinder-blue.jpg"></div>
+
+	<div id='yellow' style="display:none;">
+<img src="Images/20litecylinder-yellow.jpg">	
+	</div>
+
+	<div id='red' style="display:none;">
+<img src="Images/20litecylinder-red2.jpg">
+	</div>
+	
+	<hr/>
+
+<p>Available in three colors: 
+<a href="javascript:switchid('blue');">blue</a>
+<a href="javascript:switchid('yellow');">yellow</a>
+<a href="javascript:switchid('red');">red</a>
+</p>
+
+	
+	</body>
+</html>

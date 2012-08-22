@@ -1,0 +1,103 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>Coffee Fun!</title>
+
+<link type="text/css" rel="stylesheet" href="css.css"/>
+
+<script type="text/javascript">
+
+adImages = new Array("header1.jpg","header2.jpg","header3.jpg")
+thisAd = 0
+imgCt = adImages.length
+
+function rotate() {
+if (document.images) {
+thisAd++
+if (thisAd == imgCt) {
+thisAd = 0
+}
+
+document.adBanner.src=adImages[thisAd]
+
+setTimeout("rotate()", 3 * 1000)
+
+}
+
+}
+
+function email(url, name, w, h)
+{
+w += 32;
+h += 96;
+ var win = window.open(url,
+  name,
+  'width=' + w + ', height=' + h + ', ' +
+  'location=no, menubar=no, ' +
+  'status=no, toolbar=no, scrollbars=yes, resizable=no');
+ win.resizeTo(w, h);
+ win.focus();
+}
+
+
+</script>
+</head>
+<body onload="rotate()">
+
+<div class="wrapper">
+
+<div id="banner">
+<img src="header1.jpg" name="adBanner" />
+</div>
+
+<div id="menu">
+<table id="MainMenu" width="100%" border="5" cellspacing="0" style="color: #e3d4bc;">
+<tr>
+<td><a href="index.html"><strong>Doodle Home</strong></a></td>
+<td><a href="about.html"><strong>About Doodle</strong></a></td>
+<td><a href="product.html"><strong>Order Doodle Coffee</strong></a></td>
+<td><a href="fun.html"><strong>Coffee Fun</strong></a></td>
+<td><a href="security.html"><strong>Security Policy</strong></a></td>
+</tr>
+</table>
+</div>
+
+<div id="body">
+
+<h2>Coffee Fun With Mr. Dirty Jobs!</h2>
+
+<br/>
+<div id="funbox">
+<h3>Fun Links and Information</h3>
+<hr/>
+
+ <p.c1>Click here to receive Doodle Coffee special offers! </p>
+<button type="submit" onClick="email('mail.html', 'popup', 640, 480)"><strong>Doodle Mailings</strong></button>
+ 
+<hr/>
+<p.c1>Did you know that prior to the 1600's, the favorite breakfast drink was beer? Since then, coffee has become second only to oil as the world's most valuable commodity.</p>
+<button type="submit" onClick="email('coffeequiz.html', 'popup', 640, 480)"><strong>Coffee Quiz!</strong></button>
+</div>
+<h2><object width="425" height="344"><param name="movie" value="http://www.youtube.com/v/6GG6xOn2mqI&hl=en&fs=1"></param><param name="allowFullScreen" value="true"></param><param name="allowscriptaccess" value="always"></param><embed src="http://www.youtube.com/v/6GG6xOn2mqI&hl=en&fs=1" type="application/x-shockwave-flash" allowscriptaccess="always" allowfullscreen="true" width="425" height="344"></embed></object></h2>
+
+</div>
+
+<div id="footer" style="border-bottom:black solid 45px;">
+Web-406 Team C
+<br>Michael Brown | Orland Laboy | Lori Matis | Robert Meeks | Rob Samuel
+<br>Design and Content From: Christopher Bean Coffee
+<br><a style="color:white"; href="http://www.christopherbean.com/">Christopher Bean Coffee's Web Site</strong></a>
+</div>
+</div>
+
+
+</body>
+</html>
+
+
+
+
+
+
+

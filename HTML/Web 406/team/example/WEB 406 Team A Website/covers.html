@@ -1,0 +1,83 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 TRANSITIONAL//EN">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<html>
+
+	<head>
+		<title></title>
+		<script language="JavaScript">
+//here you place the ids of every element you want.
+var ids=new Array('cardinals','eagles','bears','steelers');
+
+function switchid(id){	
+	hideallids();
+	showdiv(id);
+}
+
+function hideallids(){
+	//loop through the array and hide each element by id
+	for (var i=0;i<ids.length;i++){
+		hidediv(ids[i]);
+	}		  
+}
+
+function hidediv(id) {
+	//safe function to hide an element with a specified id
+	if (document.getElementById) { // DOM3 = IE5, NS6
+		document.getElementById(id).style.display = 'none';
+	}
+	else {
+		if (document.layers) { // Netscape 4
+			document.id.display = 'none';
+		}
+		else { // IE 4
+			document.all.id.style.display = 'none';
+		}
+	}
+}
+
+function showdiv(id) {
+	//safe function to show an element with a specified id
+		  
+	if (document.getElementById) { // DOM3 = IE5, NS6
+		document.getElementById(id).style.display = 'block';
+	}
+	else {
+		if (document.layers) { // Netscape 4
+			document.id.display = 'block';
+		}
+		else { // IE 4
+			document.all.id.style.display = 'block';
+		}
+	}
+}
+</script>
+	</head>
+	<body>
+
+	<div id='cardinals' style="display:block;">
+<img src="Images/ep19.jpg"></div>
+
+	<div id='eagles' style="display:none;">
+<img src="Images/ep21.jpg">	
+	</div>
+
+	<div id='bears' style="display:none;">
+<img src="Images/ep23.jpg">
+	</div>
+	
+	<div id='steelers' style="display:none;">
+<img src="Images/ep22.jpg">
+	</div>
+	
+	<hr/>
+
+<p>Available in four teams colors: 
+<a href="javascript:switchid('cardinals');">Cardinals</a>
+<a href="javascript:switchid('eagles');">Eagles</a>
+<a href="javascript:switchid('bears');">Bears</a>
+<a href="javascript:switchid('steelers');">Steelers</a>
+</p>
+
+	
+	</body>
+</html>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<workspace>
+	<settings>
+		<label>test</label>
+	</settings>
+	<users>
+		<user>
+			<path>test.jcu</path>
+		</user>
+	</users>
+	<projects>
+		<project>
+			<path>RandomNumbers\RandomNumbers.jcp</path>
+		</project>
+		<project>
+			<path>craps\craps.jcp</path>
+		</project>
+	</projects>
+</workspace>

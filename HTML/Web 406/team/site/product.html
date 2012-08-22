@@ -1,0 +1,287 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>Doodle Coffee Product</title>
+<link type="text/css" rel="stylesheet" href="css.css"/>
+
+
+<script type="text/javascript">
+
+adImages = new Array("header1.jpg","header2.jpg","header3.jpg")
+thisAd = 0
+imgCt = adImages.length
+
+function rotate() {
+if (document.images) {
+thisAd++
+if (thisAd == imgCt) {
+thisAd = 0
+}
+
+document.adBanner.src=adImages[thisAd]
+
+setTimeout("rotate()", 3 * 1000)
+
+}
+
+}
+
+function IsEmpty(aTextField) {
+   if ((aTextField.value.length==0) ||
+   (aTextField.value==null)) {
+      return true;
+   }
+   else { return false; }
+}	
+
+function IsNumeric(sText)
+
+{
+   var ValidChars = "0123456789.";
+   var IsNumber=true;
+   var Char;
+
+ 
+   for (i = 0; i < sText.length && IsNumber == true; i++) 
+      { 
+      Char = sText.charAt(i); 
+      if (ValidChars.indexOf(Char) == -1) 
+         {
+         IsNumber = false;
+         }
+      }
+   return IsNumber;
+   
+   }
+
+
+function isValidEmail(str) {
+return (str.lastIndexOf(".") > 2) && (str.indexOf("@") > 0) && (str.lastIndexOf(".") > (str.indexOf("@")+1));
+}
+
+
+function ValidateForm(form)
+{
+
+ if(IsEmpty(form.name))  
+   { 
+      alert('Please enter your name!') 
+      form.name.focus(); 
+      return false; 
+   } 
+
+ if (document.forms[0].street.value == ""||document.forms[0].city.value == ""||document.forms[0].state.value == ""||document.forms[0].zipcode.value == "") 
+{ window.alert("You must enter your complete address to proceed.");return false;}
+
+
+if(isValidEmail(form.email.value)==false)
+{
+ form.email.value="";
+ form.email.focus();
+ {alert("You have entered an invalid email address. Please try again.");
+form.email.select();
+return false;}
+
+}
+
+  if(IsEmpty(form.creditcardnum)) 
+   { 
+      alert('You have not entered an account number') 
+      form.creditcardnum.focus(); 
+      return false; 
+   } 
+ 
+ 
+   if (!IsNumeric(form.creditcardnum.value)) 
+   { 
+      alert('Please enter only numbers or decimal points in the account field') 
+      form.creditcardnum.focus(); 
+      return false; 
+      } 
+
+else
+{return true;}
+ 
+} 
+
+</script>
+</head>
+<body onload="rotate()">
+
+<div class="wrapper">
+
+<div id="banner">
+<img src="header1.jpg" name="adBanner" />
+</div>
+
+<div id="menu">
+<table id="MainMenu" width="100%" border="5" cellspacing="0" style="color: #e3d4bc;">
+<tr>
+<td><a href="index.html"><strong>Doodle Home</strong></a></td>
+<td><a href="about.html"><strong>About Doodle</strong></a></td>
+<td><a href="product.html"><strong>Order Doodle Coffee</strong></a></td>
+<td><a href="fun.html"><strong>Coffee Fun</strong></a></td>
+<td><a href="security.html"><strong>Security Policy</strong></a></td>
+</tr>
+</table>
+</div>
+
+<div id="body">
+<td><h2>All Coffees</h2>
+
+<p>Doodle coffees makes some of the best coffees throughout the world. We have an excellent selection of special coffees in various flavors that coffee drinkers can enjoy. Below are descriptions and pricing of your favorite coffees. We hope you enjoy your shopping experience with The Doodle Coffee Company.</p>
+<h2 style="margin-bottom:-25px;"><a href="#order">Click Here To Order Today!</a></h2>
+<h6 style="text-align:center;">Order form located at bottom of this page!</h6>
+<br />
+<td><table border="0" width="100%" cellspacing="0" cellpadding="2" class="productListing">
+<tr class="productListing-odd">
+    <td align="center"><img src="Vanilla.gif" alt="Vanilla Flavored Coffee" title="Vanilla Flavored Coffee"></a>&nbsp;<br><INPUT TYPE="radio" NAME=" " VALUE=" "> Vanilla Flavored Coffee
+
+<br>&nbsp;$5.00&nbsp;<br></td>
+    <td align="center"><img src="Chocolate.gif" alt="Chocolate Flavored Coffee" title="Chocolate Flavored Coffee"></a>&nbsp;<br><INPUT TYPE="radio" NAME=" " VALUE=" "> Chocolate Flavored Coffee
+<br>&nbsp;$5.00&nbsp;<br></td>
+</tr>
+<tr class="productListing-even">
+    <td align="center"><img src="Cinnamon.gif" alt="Cinnamon Flavored Coffee" title="Cinnamon Flavored Coffee"></a>&nbsp;<br><INPUT TYPE="radio" NAME=" " VALUE=" "> Cinnamon Flavored Coffee
+<br>&nbsp;$5.00&nbsp;<br></td>
+    <td align="center"><img src="Caramel.gif" alt="Caramel Flavored Coffee" title="Caramel Flavored Coffee"></a>&nbsp;<br><INPUT TYPE="radio" NAME=" " VALUE=" "> Caramel Flavored Coffee
+
+<br>&nbsp;$5.00&nbsp;<br></td>
+</tr>
+<tr class="productListing-odd">
+    <td align="center"><img src="Raspberry.gif" alt="Raspberry Flavored Coffee" title="Raspberry Flavored Coffee"></a>&nbsp;<br><INPUT TYPE="radio" NAME=" " VALUE=" "> Raspberry Flavored Coffee
+<br>&nbsp;$5.00&nbsp;<br></td>
+    <td align="center"><img src="Orange.gif" alt="Orange Flavored Coffee" title="Orange Flavored Coffee"></a>&nbsp;<br><INPUT TYPE="radio" NAME=" " VALUE=" "> Orange Flavored Coffee<br>&nbsp;$5.00&nbsp;<br></td>
+</tr>
+<tr class="productListing-even">
+    <td align="center"><img src="Pecan.gif" alt="Pecan Flavored Coffee" title="Pecan Flavored Coffee"></a>&nbsp;<br><INPUT TYPE="radio" NAME=" " VALUE=" "> Pecan Flavored Coffee
+
+<br>&nbsp;$5.00&nbsp;<br></td>
+    <td align="center"><img src="Banana.gif" alt="Banana Flavored Coffee" title="Banana Flavored Coffee"></a>&nbsp;<br><INPUT TYPE="radio" NAME=" " VALUE=" "> Banana Flavored Coffee
+<br>&nbsp;$5.00&nbsp;<br></td>
+</tr>
+<tr class="productListing-odd">
+    <td align="center"><img src="Hazel Nut.gif" alt="Hazel Nut Flavored Coffee" title="Hazel Nut Flavored Coffee"></a>&nbsp;<br><INPUT TYPE="radio" NAME=" " VALUE=" "> Hazel Flavored Coffee
+<br>&nbsp;$5.00&nbsp;<br></td>
+    <td align="center"><img src="Mocha.gif" alt="Mohca Flavored Coffee" title="Mocha Flavored Coffee"></a>&nbsp;<br><INPUT TYPE="radio" NAME=" " VALUE=" "> Mocha Flavored Coffee
+
+<br>&nbsp;$5.00&nbsp;<br></td>
+</tr>
+</table>
+&nbsp;</p></td>
+
+</p>
+<br/>
+<hr/>
+<h2 id="order" align="center">Shipping and Billing Information</h2>
+
+<br/>
+
+
+<form="paymentinfo">
+<form action="submitted.html" method="post" onsubmit="javascript:return ValidateForm(this);return checkEmail();"/>
+<table align="center" title="Payment and Shipping Info" summary="This form is the Payment and Shipping info.">
+<hr />
+
+<tr>
+  <td>Fist and Last Name</td>
+  <td><input type="text" name="name" size="25" /></td>
+</tr>
+<tr>
+  <td>Shipping Adress - Street</td>
+  <td><input type="text" name="street" size="25" /></td>
+</tr>
+<tr>
+  <td>Shipping Adress - City</td>
+  <td><input type="text" name="city" size="25" /></td>
+</tr>
+<tr>
+  <td>Shipping Adress - State</td>
+  <td><input type="text" name="state" size="2" maxlength="2" /></td>
+</tr>
+<tr>
+  <td>Shipping Adress - Zip Code</td>
+  <td><input type="text" name="zipcode" size="5" maxlength="5" /></td>
+</tr>
+<tr>
+  <td>Email Adress</td>
+  <td><input type="text" name="email" size="25" /></td>
+</tr>
+
+
+<tr>
+  <td>Credit Card Type</td>
+  <td><input type="radio" name="creditcard" value="visa" checked="checked" />Visa <input type="radio" name="creditcard" value="mastercard" />Mastercard <input type="radio" name="creditcard" value="American Express" />American Express <input type="radio" name="creditcard" value="Discover" />Discover</td>
+</tr>
+<tr>
+  <td>Credit Card Number</td>
+  <td><input type="text" name="creditcardnum" size="25" /></td>
+</tr>
+<tr>
+  <td>Experation Date</td>
+  <td><select id="month">
+<option>01</option>
+<option>02</option>
+<option>03</option>
+<option>04</option>
+<option>05</option>
+<option>06</option>
+<option>07</option>
+<option>08</option>
+<option>09</option>
+<option>10</option>
+<option>11</option>
+<option>12</option>
+</select>
+  <select id="year">
+<option>2009</option>
+<option>2010</option>
+<option>2011</option>
+<option>2012</option>
+<option>2013</option>
+<option>2014</option>
+<option>2015</option>
+<option>2016</option>
+<option>2017</option>
+<option>2018</option>
+<option>2019</option>
+<option>2020</option>
+</select>
+
+
+
+
+
+</td>
+</tr>
+
+
+<tr>
+  <td colspan="2"><input type="submit" value="Submit"/>
+  <input type="reset" value="Cancel" /></td>
+</tr>
+
+
+
+
+
+
+
+</table>
+</form>
+
+</div>
+
+
+ <div id="footer"style="border-bottom:black solid 45px;">
+Web-406 Team C
+<br>Michael Brown | Orland Laboy | Lori Matis | Robert Meeks | Rob Samuel
+<br>Design and Content From: Christopher Bean Coffee
+<br><a style="color:white"; href="http://www.christopherbean.com/">Christopher Bean Coffee's Web Site</strong></a>
+</div>
+</div>
+
+
+</body>
+</html>

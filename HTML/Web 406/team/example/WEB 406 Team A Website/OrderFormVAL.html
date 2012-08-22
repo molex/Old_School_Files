@@ -1,0 +1,363 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" 
+ "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" >
+
+<head runat="server">
+<style> @import "stylesheet2.css";</style>
+<title>Smokers BBQ Supply - Home Page</title>
+
+
+
+<script type="text/javascript" src="Order.js"></script>
+
+</head>
+
+
+
+<div id="wrap">
+
+<div id="header">	
+
+<div id="titles">
+
+<Center>
+<p> </P>
+<img src="Images/SmokersBBQ_Logo.gif" />
+<h1><FONT COLOR="#FF7000">Welcome to Smoker's BBQ Supply</Font></h1>
+</Center>
+
+</div><!-- end id titles -->
+
+</div><!-- end id header -->
+
+<div id="menu">
+
+<ul>
+<li><a href="Home.html">Home</a></li>
+<li><a href="Equipment.html">Equipment</a></li>
+<li><a href="Assessories.html">Accessories</a></li>
+<li><a href="Books.html">Books & Recipes</a></li>
+<li><a href="CleaningProducts.html">Cleaning Products</a></li>
+
+</ul>
+
+</div><!-- end id menu -->
+
+<div id="contentwrapper">
+
+<div id="content">
+
+<div id="rightcolumn">
+
+<div class="rightcolumnbox">
+
+<h1>
+Thank You for Choosing Smoker's BBQ Supply!
+</h1>
+
+<ul class="rightcolumnmenu">
+<li><a href="Home.html">Home</a></li>
+<li><a href="AboutUs.html">About Us</a></li>
+<li><a href="Survey.html">Customer Survey</a></li>
+<li><a href="OrderForm.html">Order Form</a></li>
+<li><a href="Privacy.html">Privacy Policy</a></li>
+<li><a href="Security.html">Security Policy</a></li>
+</ul>
+
+<h1>
+Mission:
+</h1>
+
+<p>
+Smokers BBQ Supply is committed to providing our customers with the finest selection of BBQ equipment and accessories.
+</p>
+					
+</div><!-- end class rightcolumnbox -->
+	
+</div><!-- end id rightcolumn -->
+
+<div id="leftcolumn">
+
+<div class="content">
+	
+<h1>
+Order Form
+</h1>
+
+<p>
+<img src="Images/Cart.jpg" class="floatleft" width="" height="" border="" alt="StyleSheet.css"/></p><br><br><br><br><br><br>
+<p></p>
+<p class="highlight">
+Shop at Home Online!
+</p>
+
+<body onload="checkCookie()">
+
+<form action="FormSubmitted.html" Name ="ofrm" onsubmit="return validate_form(this)"
+type="text"
+    onsubmit="return confirmSubmit();"
+    onreset="return confirmReset();" >
+
+
+<Table>
+
+<B>One Month Subscription to Smokers BBQ Supply</B><BR><BR>
+
+<input type=hidden name="Cost" value="FREE">
+<input type=hidden name="qty" value="1"><BR>
+<INPUT TYPE="radio" NAME="Description" VALUE="One Month Subscription "> FREE Subscription <p></p>
+
+	
+		<tr>
+			<td width="250" height="31"><b>Item Description</b></td>
+			<td align="center" width="100" height="31"><b>Quantity</b></td>
+			<td align="right" height="31" width="60"><b>Price </b></td>
+			<td align="right" height="31" width="140"><b>Total</b></td>
+		</tr>
+
+<p class="highlight">
+Items in Stock:
+</p>
+
+		<tr>
+			<td width="250">Backers and Chefs Gas Grill</td>
+			<td align="center" width="100">
+			<input type="text" name="qtyA" size="5" tabindex="5" onchange="calculate()"></td>
+			<td align="right" width="60">$800.00</td>
+			<td align="right" width="140">
+			<input type=hidden name="DescriptionA" value="Backers and Chefs Gas Grill" >
+			<input type="text" name="totalA" size="12" tabindex="99" onchange="calculate()"></td>
+		</tr>
+		<tr>
+			<td width="250">Twin Chamber Charcoal Grill
+</td>
+			<td align="center" width="100">
+			<input type="text" name="qtyB" size="5" tabindex="5" onchange="calculate()"></td>
+			<td align="right" width="60">$225.00</td>
+			<td align="right" width="140">
+			<input type=hidden name="DescriptionB" value="Twin Chamber Charcoal Grill" >
+			<input type="text" name="totalB" size="12" tabindex="99" onchange="calculate()"></td>
+		</tr>
+		<tr>
+			<td width="250">Portable Charcoal Grill</td>
+			<td align="center" width="100">
+			<input type="text" name="qtyC" size="5" tabindex="5" onchange="calculate()"></td>
+			<td align="right" width="60">$49.00</td>
+			<td align="right" width="140">
+<input type=hidden name="DescriptionC" value="Portable Charcoal Grill" >
+			<input type="text" name="totalC" size="12" tabindex="99" onchange="calculate()"></td>
+		</tr>
+
+		<tr>
+			<td width="250">Flipable Kabob Basket</td>
+			<td align="center" width="100">
+			<input type="text" name="qtyD" size="5" tabindex="5" onchange="calculate()"></td>
+			<td align="right" width="60">$25.00</td>
+			<td align="right" width="140">
+<input type=hidden name="DescriptionD" value="Flipable Kabob Basket" >
+			<input type="text" name="totalD" size="12" tabindex="99" onchange="calculate()"></td>
+		</tr>
+
+		<tr>
+			<td width="250">NFL Grill Covers
+</td>
+			<td align="center" width="100">
+			<input type="text" name="qtyE" size="5" tabindex="5" onchange="calculate()"></td>
+			<td align="right" width="60">$12.00</td>
+			<td align="right" width="140">
+<input type=hidden name="DescriptionE" value="NFL Grill Covers" >
+			<input type="text" name="totalE" size="12" tabindex="99" onchange="calculate()"></td>
+		</tr>
+
+		<tr>
+			<td width="250">Cradle Rotisserie Kit</td>
+			<td align="center" width="100">
+			<input type="text" name="qtyF" size="5" tabindex="5" onchange="calculate()"></td>
+			<td align="right" width="60">$31.00</td>
+			<td align="right" width="140">
+<input type=hidden name="DescriptionF" value="Cradle Rotisserie Kit" >
+			<input type="text" name="totalF" size="12" tabindex="99" onchange="calculate()"></td>
+		</tr>
+
+
+		<tr>
+			<td width="250">32 Piece Cutlery Set</td>
+			<td align="center" width="100">
+			<input type="text" name="qtyG" size="5" tabindex="5" onchange="calculate()"></td>
+			<td align="right" width="60">$19.00</td>
+			<td align="right" width="140">
+<input type=hidden name="DescriptionG" value="32 Piece Cutlery Set" >
+			<input type="text" name="totalG" size="12" tabindex="99" onchange="calculate()"></td>
+		</tr>
+
+		<tr>
+			<td width="250">Lite Cylinder Propane Tank</td>
+			<td align="center" width="100">
+			<input type="text" name="qtyH" size="5" tabindex="5" onchange="calculate()"></td>
+			<td align="right" width="60">$15.00</td>
+			<td align="right" width="140">
+<input type=hidden name="DescriptionH" value="Lite Cylinder Propane Tank" >
+			<input type="text" name="totalH" size="12" tabindex="99" onchange="calculate()"></td>
+		</tr>
+
+		<tr>
+			<td width="250">The Barbecue! Bible</td>
+			<td align="center" width="100">
+			<input type="text" name="qtyI" size="5" tabindex="5" onchange="calculate()"></td>
+			<td align="right" width="60">$11.00</td>
+			<td align="right" width="140">
+<input type=hidden name="DescriptionI" value="The Barbecue! Bible" >
+			<input type="text" name="totalI" size="12" tabindex="99" onchange="calculate()"></td>
+		</tr>
+
+		<tr>
+			<td width="250">Sunbrite Grill Cleaning Kit</td>
+			<td align="center" width="100">
+			<input type="text" name="qtyJ" size="5" tabindex="5" onchange="calculate()"></td>
+			<td align="right" width="60">$9.00</td>
+			<td align="right" width="140">
+<input type=hidden name="DescriptionJ" value="Sunbrite Grill Cleaning Kit" >
+			<input type="text" name="totalJ" size="12" tabindex="99" onchange="calculate()"></td>
+		</tr>
+
+
+		<tr>
+			<td width="250">SHIPPING</td>
+			<td align="center" width="100">
+			<input type="text" name="qtyS" size="5" tabindex="5" onchange="calculate()"></td>
+			<td align="right" width="60">$6.95</td>
+			<td align="right" width="140">
+<input type=hidden name="DescriptionS" value="SHIPPING" >
+			<input type="text" name="totalS" size="12" tabindex="99" onchange="calculate()"></td>
+		</tr>
+
+
+	
+
+		<tr>
+			<td width="250">
+			<p align="right"><b>TOTALS:</b></td>
+			<td align="center" width="100">&nbsp;</td>
+			<td align="right" width="60">&nbsp;</td>
+			<td align="right" width="140">
+			<input type="text" name="GrandTotal" size="15" tabindex="99" onchange="calculate()"></td>
+		</tr>
+	
+	</table>
+	<table border="0" cellpadding="0" width="600" >
+		<tr>
+			<td width="563">
+			<p align="center">
+		</td>
+		</tr>
+<p class="highlight">
+Shipping & Credit Card Information
+</p>
+
+<TR><TD>
+<strong><center><HR>General Information</strong><BR><font size=-1 color=red>(As Shown On Your Credit Card Statement.  Your Address Will Be Verified.)</font><HR></center>
+
+
+<font><center><hr><strong>Credit Card Information</strong><hr></center></font>
+
+<TABLE>
+<TR>
+<TD ALIGN="right"><B>Card Number: </B> </TD>
+<TD><INPUT NAME="CC_Number" SIZE=16> <B>Exp. Date: </B>
+<select NAME="CC_Month">
+        <option>
+    <option value='January'>01
+    <option value='February'>02
+    <option value='March'>03
+    <option value='April'>04
+        <option value='May'>05
+        <option value='June'>06
+        <option value='July'>07
+        <option value='August'>08
+        <option value='September'>09
+        <option value='October'>10
+        <option value='November'>11
+        <option value='December'>12
+</select>
+<select name="CC_Year">
+	<option>
+    <option>1997
+	<option>2008
+	<option>2009
+	<option>2010
+	<option>2011
+	<option>2012
+	<option>2013
+	<option>2014
+	<option>2015
+</select>
+</td></TR>
+
+</TABLE>
+<P>
+<TABLE>
+
+<TR>
+<TD ALIGN="right"><B>First Name: </B></TD><TD><INPUT NAME="First_Name" SIZE=13> 
+
+<B>Last Name: </B><INPUT NAME="Last_Name" SIZE=13><BR></TD>
+</TR>
+
+<TR>
+<TD ALIGN="right"><B>Address: </B></TD><TD><INPUT NAME="Address" SIZE=30><BR></TD>
+</TR>
+
+<TR>
+<TD ALIGN="right"><B>City:</B></TD><TD><INPUT NAME="City" SIZE=15> 
+
+<B> State: </B><INPUT NAME="State" SIZE=2 MAXLENGTH=2> 
+
+<TD ALIGN="right"><B> Zip:</B><INPUT NAME="Zip" SIZE=10><BR></TD>
+</TR>
+
+<TR>
+<TD ALIGN="right"><B>Country: </B> </TD><TD><INPUT NAME="Country" SIZE=45><BR></TD>
+</TR>
+
+<TR>
+<TD ALIGN="right"><B>Email: </B></TD>
+<TD><INPUT NAME="Email" SIZE=45 onchange ="checkEmail();"><BR></TD>
+</TR>
+
+
+</TABLE>
+
+
+<HR>
+
+<P><CENTER>
+<font color=red>Submit this form <B>ONCE ONLY</B>.</font><BR>
+Your credit card information will be processed in real-time.  You should receive a response in about 15-25 seconds.  However, if Internet traffic is unusually high, the tranaction could take longer than usual.  Pressing the submit button multiple times will cause multiple charges to your credit card account.
+<P>
+
+
+<input type="submit" value="Submit Order" name="subButton" tabindex="50">&nbsp;&nbsp;&nbsp;&nbsp; 
+<input type="reset" value="Clear Form" name="resetButton" tabindex="50">
+
+
+</form>
+
+
+</div><!-- end class content -->
+
+</div><!-- end id leftcolumn -->
+
+</div><!-- end id contentwrapper -->
+
+</div><!-- end id wrap -->
+
+<div id="footer">
+
+</div><!-- end id footer -->
+	
+<!-- wrap ends here -->
+</div>
+
+</body>
+</html>

@@ -1,0 +1,76 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>Thank You!</title>
+
+<link type="text/css" rel="stylesheet" href="css.css"/>
+
+<script type="text/javascript">
+
+adImages = new Array("header1.jpg","header2.jpg","header3.jpg")
+thisAd = 0
+imgCt = adImages.length
+
+function rotate() {
+if (document.images) {
+thisAd++
+if (thisAd == imgCt) {
+thisAd = 0
+}
+
+document.adBanner.src=adImages[thisAd]
+
+setTimeout("rotate()", 3 * 1000)
+
+}
+
+}
+
+
+
+
+
+</script>
+</head>
+<body onload="rotate()">
+
+<div class="wrapper">
+
+<div id="banner">
+<img src="header1.jpg" name="adBanner" />
+</div>
+
+<div id="menu">
+<table id="MainMenu" width="100%" border="5" cellspacing="0" style="color: #e3d4bc;">
+<tr>
+<td><a href="index.html"><strong>Doodle Home</strong></a></td>
+<td><a href="about.html"><strong>About Doodle</strong></a></td>
+<td><a href="product.html"><strong>Order Doodle Coffee</strong></a></td>
+<td><a href="fun.html"><strong>Coffee Fun</strong></a></td>
+<td><a href="security.html"><strong>Security Policy</strong></a></td>
+</tr>
+</table>
+</div>
+
+<div id="body">
+<h2>Thanks!</h2>
+<h3 style="text-align:center;">Thank You for ordering from Doodle Coffee.<br> 
+You should be receiving your fresh farm grown coffee beans in 3-5 business days. <br><a href="index.html"><em>Click here</em></a> to return to our home page.
+<br>Please come back again!</h3>
+
+</tr>
+</table>
+</div>
+
+<div id="footer" style="border-bottom:black solid 45px;">
+Web-406 Team C
+<br>Michael Brown | Orland Laboy | Lori Matis | Robert Meeks | Rob Samuel
+<br>Design and Content From: Christopher Bean Coffee
+<br><a style="color:white"; href="http://www.christopherbean.com/">Christopher Bean Coffee's Web Site</strong></a>
+</div>
+</div>
+
+
+</body>
+</html>

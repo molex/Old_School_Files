@@ -1,0 +1,14 @@
+425488741,555909803,868659354,966435555,720388023,513445231,617520987,785677477,426826774,666367656,624527272,481005579,405873493,316186616,362876056,271586451,499954330,465588535,504705882,546490272,640803677,586090727
+
+
+
+
+Private Sub txtBoxOffice_KeyPress(ByVal sender As Object, ByVal e As System.Windows.Forms.KeyPressEventArgs) Handles txtBoxOffice.KeyPress
+    If (Microsoft.VisualBasic.Asc(e.KeyChar) < 48) _
+              Or (Microsoft.VisualBasic.Asc(e.KeyChar) > 57) Then
+            e.Handled = True
+    End If
+    If (Microsoft.VisualBasic.Asc(e.KeyChar) = 8) Then
+            e.Handled = False
+    End If
+End Sub

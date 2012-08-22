@@ -1,0 +1,28 @@
+{{"Dr. No","$425,488,741"},{"From Russia with Love","$555,909,803"},{"Goldfinger","$868,659,354"},{"Thunderball","$966,435,555"},{"You Only Live Twice","$720,388,023"},{"Diamonds Are Forever","$617,520,987"},{"On Her Majesty's Secret Service","$513,445,231"},{"Live and Let Die","$785,677,477"},{"The Man with the Golden Gun","$426,826,774"},{"The Spy Who Loved Me","$666,367,656"},{"Moonraker","$624,527,272"},{"For Your Eyes Only","$481,005,579"},{"Octopussy","$405,873,493"},{"A View to a Kill","$316,186,616"},{"The Living Daylights","$362,876,056"},{"From Russia with Love","$271,586,451"},{"GoldenEye","$499,954,330"},{"Tomorrow Never Dies","$465,588,535"},{"The World Is Not Enough","$504,705,882"},{"Die Another Day","$546,490,272"},{"Casino Royale","$640,803,677"},{"Quantum of Solace","$586,090,727"}}
+
+
+Dim i As Integer
+        For i = 0 To strTitleArray.Length - 1
+            rtxtDisplay.Text += strTitleArray(i) + vbTab + vbTab + dblBoxOfficeArray(i).ToString() + vbNewLine
+            i += 1
+        Next
+
+Dim strMissionArrayEasy(,) As String = {{"Dr.No", "$425,488,741"}, {"From Russia with Love", "$555,909,803"}, {"Goldfinger", "$868,659,354"}, _
+        {"Thunderball", "$966,435,555"}, {"You Only Live Twice", "$720,388,023"}, {"Diamonds Are Forever", "$617,520,987"}, _
+        {"On Her Majesty's Secret Service", "$513,445,231"}, {"Live and Let Die", "$785,677,477"}, {"The Man with the Golden Gun", "$426,826,774"}, _
+        {"The Spy Who Loved Me", "$666,367,656"}, {"Moonraker", "$624,527,272"}, {"For Your Eyes Only", "$481,005,579"}, {"Octopussy", "$405,873,493"}, _
+        {"A View to a Kill", "$316,186,616"}, {"The Living Daylights", "$362,876,056"}, {"From Russia with Love", "$271,586,451"}, {"GoldenEye", "$499,954,330"}, _
+        {"Tomorrow Never Dies", "$465,588,535"}, {"The World Is Not Enough", "$504,705,882"}, {"Die Another Day", "$546,490,272"}, {"Casino Royale", "$640,803,677"}, _
+        {"Quantum of Solace", "$586,090,727"}}
+
+        Dim i As Integer
+        
+        For i = 0 To 21 Step i + 1
+            rtxtDisplay.Text += strMissionArray(i, 0) + vbTab + strMissionArray(i, 1) + vbNewLine
+            
+        Next
+        'displayTopGross(strMissionArrayEasy)strS
+
+"Dr. No","From Russia with Love,Goldfinger,Thunderball,You Only Live Twice,On Her Majesty's Secret Service,Diamonds Are Forever,Live and Let Die,The Man with the Golden Gun,The Spy Who Loved Me,Moonraker,For Your Eyes Only,Octopussy,A View to a Kill,The Living Daylights,Licence to Kill,GoldenEye,Tomorrow Never Dies,The World Is Not Enough,Die Another Day,Casino Royale,Quantum of Solace
+
+

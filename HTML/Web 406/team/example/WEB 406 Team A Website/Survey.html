@@ -1,0 +1,173 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" 
+ "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" >
+
+<head runat="server">
+<style> @import "stylesheet.css";</style>
+<title>Smokers BBQ Supply - Customer Survey</title>
+
+<script type="text/javascript" src="Survey.js"> 
+</script>
+
+</head>
+
+<body onload="javascript:switchid('yes');">
+
+<div id="wrap">
+
+<div id="header">	
+
+<div id="titles">
+
+<Center>
+<p> </P>
+<img src="Images/SmokersBBQ_Logo.gif" />
+<h1><FONT COLOR="#FF7000">Welcome to Smoker's BBQ Supply</Font></h1>
+</Center>
+
+</div><!-- end id titles -->
+
+</div><!-- end id header -->
+
+<div id="menu">
+
+<ul>
+<li><a href="Home.html">Home</a></li>
+<li><a href="Equipment.html">Equipment</a></li>
+<li><a href="Assessories.html">Assessories</a></li>
+<li><a href="Books.html">Books & Recipes</a></li>
+<li><a href="CleaningProducts.html">Cleaning Products</a></li>
+
+
+
+</ul>
+
+</div><!-- end id menu -->
+
+<div id="contentwrapper">
+
+<div id="content">
+
+<div id="rightcolumn">
+
+<div class="rightcolumnbox">
+
+<h1>
+Rate Us on How We Are Doing
+</h1>
+
+<ul class="rightcolumnmenu">
+<li><a href="Home.html">Home</a></li>
+<li><a href="AboutUs.html">About Us</a></li>
+<li><a href="Survey.html">Customer Survey</a></li>
+<li><a href="OrderFormVAL.html">Order Form</a></li>
+<li><a href="Privacy.html">Privacy Policy</a></li>
+<li><a href="Security.html">Security Policy</a></li>
+</ul>
+
+<h1>
+Mission:
+</h1>
+
+<p>
+Smokers BBQ Supply is committed to providing our customers with the finest selection of BBQ equipment and assessories.
+</p>
+
+</div><!-- end class rightcolumnbox -->
+	
+</div><!-- end id rightcolumn -->
+
+<div id="leftcolumn">
+
+<div class="content">
+	
+<h1>Customer Survey</h1>
+
+<p class="highlight">
+Thank you so much for taking a moment to help us make <b>Smokers BBQ Supply</b> even better...</p>
+
+<h3>Please fill in all required (<font color="red">*</font>) fields:</h3>
+
+<form method="post" action="#" name="survey" id="form" onsubmit="return checkForm4(survey)">
+<p>
+
+
+<label><font color="red">*</font> Name </label>
+<input type="radio" name="gender" value="mr"/> Mr
+&nbsp;&nbsp;&nbsp;<input type="radio" name="gender" value="mrs"/> Mrs
+
+
+<input name="name" type="text" size="30">
+
+<p><label><font color="red">*</font> Email</label>
+<input name="email" type="text" size="30">
+
+<p><label><font color="red">*</font> What is your age range?</label>
+<input type="radio" name="age" value="0-18"/>&nbsp;under 18
+&nbsp;&nbsp;&nbsp;<input type="radio" name="age" value="18-24"/>&nbsp;18 to 24
+&nbsp;&nbsp;&nbsp;<input type="radio" name="age" value="25-39"/>&nbsp;25 to 39
+&nbsp;&nbsp;&nbsp;<input type="radio" name="age" value="40-65"/>&nbsp;40 to 65
+&nbsp;&nbsp;&nbsp;<input type="radio" name="age" value="65+"/>&nbsp;65+
+
+<p><label><font color="red">*</font> Was the Smokers website easy to navigate?</label>
+<input type="radio" name="easy" checked="checked" onclick="javascript:switchid('yes');" value="yes"/>&nbsp;Yes
+&nbsp;&nbsp;&nbsp;<input type="radio" name="easy" onclick="javascript:switchid('no');" value="no"/>&nbsp;No
+
+<div id='no' style="display:none;">
+<p><label>Suggestions</label>
+<textarea rows="5" cols="5"></textarea><br>
+
+<p><label><font color="red">*</font> What best describes you? (click all that apply)</label></p>
+<p>
+<input type="checkbox" name="me" value="pro" /> Professional BBQ-er<br />
+<input type="checkbox" name="me" value="experienced" /> Experienced BBQ-er<br />
+<input type="checkbox" name="me" value="entertaining" /> I enjoy entertaining family and friends<br />
+<input type="checkbox" name="me" value="gift" /> I am shopping for a friend/family member<br />
+<input type="checkbox" name="me" value="stumble" /> Just passing through<br />
+<input type="checkbox" name="me" value="restaurant" /> Restaurant manager/owner<br />
+<input type="checkbox" name="me" value="camping" /> Camping/RV enthusiast<br />
+
+<p><label>Additional Comments</label>
+<textarea rows="5" cols="5"></textarea><br>
+
+
+<p><input class="button" type="submit" name="submit" onclick="return DoAllThese(survey)">
+</p>
+
+</div>
+
+<div id='yes' style="display:none;">
+<p><label><font color="red">*</font> What best describes you? <font size="-1">(click all that apply)</font></label></p>
+<p>
+<input type="checkbox" name="me" value="pro" /> Professional BBQ-er<br />
+<input type="checkbox" name="me" value="experienced" /> Experienced BBQ-er<br />
+<input type="checkbox" name="me" value="entertaining" /> I enjoy entertaining family and friends<br />
+<input type="checkbox" name="me" value="gift" /> I am shopping for a friend/family member<br />
+<input type="checkbox" name="me" value="stumble" /> Just passing through<br />
+<input type="checkbox" name="me" value="restaurant" /> Restaurant manager/owner<br />
+<input type="checkbox" name="me" value="camping" /> Camping/RV enthusiast<br />
+
+<p><label>Additional Comments</label>
+<textarea rows="5" cols="5"></textarea><br>
+<font size="-1">Your information will not be provided to any third-party organizations.<br /><a href="Privacy.html">Privacy Policy</a></font>
+<p><input class="button" type="submit" name="submit" onclick="return DoAllThese(survey)">
+</p>
+</form>
+	
+	
+
+
+</div><!-- end id contentwrapper -->
+
+</div><!-- end id wrap -->
+
+<div id="footer">
+
+</div><!-- end id footer -->
+	
+<!-- wrap ends here -->
+</div>
+
+</body>
+</html>

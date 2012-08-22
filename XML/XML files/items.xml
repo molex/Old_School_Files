@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<!-- This file is for the Team B Project -->
+<ite:items xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+              xmlns:ite="http://riordan/teamB/ns"
+              xsi:schemaLocation="http://riordan/teamB/ns TeamB.xsd">
+<item>
+	<item_number>3333</item_number>
+	<description>clear plastic bottles</description>
+	<cost>0.10</cost>
+	<on_hand>1500</on_hand>
+</item>
+</ite:items>

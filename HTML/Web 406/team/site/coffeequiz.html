@@ -1,0 +1,135 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+<title>The Coffee Quiz</title>
+<script type="text/javascript">
+
+<!--
+// Function to create arrays.
+function makeArray(len) {
+    for (var i = 0; i < len; i++) this[i] = null;
+this.length = len;
+}
+// The question object constructor function.
+function makeQuestion(question, correctAnswer) {
+var args = makeQuestion.arguments;
+this.question = question;
+this.correctAnswer = correctAnswer;
+this.userAnswer = null;
+this.isCorrect = isCorrect;
+this.showForm = showForm;
+this.userChoices = new makeArray(args.length - 2);
+   for (var i = 0; i < args.length - 2; i++) { 
+   this.userChoices[i] = args[i + 2];
+   }
+}
+// Method to determine if question is answered correctly.
+function isCorrect() {
+if (this.correctAnswer == this.userAnswer) return true;
+else return false;
+}
+// Method to display contents of question object.
+function showForm(n) {
+document.write((n + 1) + '. ' + this.question + '<BLOCKQUOTE><FORM>');
+    for (var i = 0; i < this.userChoices.length; i++) {
+        document.write('<INPUT TYPE = "RADIO" NAME = "q' + n + 
+                       '" onClick = "quiz[' + n + '].userAnswer = ' + i + '">');
+        document.write(this.userChoices[i] + '<BR>');
+    }
+document.write('</FORM></BLOCKQUOTE>');
+}
+// Function to correct the quiz and display score, correct answers.
+function correctQuiz() {
+var correct = 0;
+correctPage = '<HTML><TITLE>Corrections</TITLE><BODY BGCOLOR = "#FFFFFF">';
+    for (var i = 0; i < quiz.length; i++) {
+    if (quiz[i].isCorrect()) correct++;
+    }
+var score = Math.round((correct / quiz.length) * 100);
+correctPage += 'Score: <STRONG>' + score + '</STRONG> %';
+    if (correct < quiz.length) { 
+    correctPage += ifWrong;
+        for (var i = 0; i < quiz.length; i++) {
+            if (!quiz[i].isCorrect()) {
+            correctPage += (i + 1) + '. ' +
+            quiz[i].userChoices[quiz[i].correctAnswer] + '<BR>';
+            }
+        }
+    }
+    else correctPage += ifAced;
+correctPage += '</BODY></HTML>';
+correctwin = window.open ('', '', 'height=300,width=300,scrollbars=yes');
+    if (correctwin.opener == null) correctwin.opener = window;
+correctwin.location = 'javascript:opener.correctPage';
+}
+// Message to display if quiz is aced.
+var ifAced = "<P>Well done, your an official coffee expert!.<P>"; 
+// Message to display if any are wrong.
+var ifWrong = "<P>Here are the correct answers to the questions you got wrong:<P>";
+// Create four question objects...
+quiz = new makeArray(4);
+
+function quiz(){
+windows.promt("When was the first coffee shop opened?  1. 15th-century 2.16th-century 3.17th-century")
+}
+quiz[0] = new makeQuestion("When was the first coffee shop opened?", 
+                            0,                                        
+                           "15th-century",                
+                           "16th-century",               
+                           "17th-century");                             
+                           
+quiz[1] = new makeQuestion("How many cups of coffee are consumed worldwide each year?",          
+                            3,                              
+                           "200 million",     
+                           "400 million",         
+               		   "200 billion", 
+                           "400 billion");
+quiz[2] = new makeQuestion("What is the estimated total number of cups of coffee consumed per day in America?",         
+                            2, 
+                           "250 billion", 
+                           "250 million",
+       			   "350 million",
+       			   "350 billion");
+quiz[3] = new makeQuestion("What percentage of coffee drinkers consume their coffee at home?",
+                            3, 
+                           "80%",
+                           "54%", 
+                           "67%",
+                           "91%");
+// -->
+
+</script>
+</head>
+<body>
+<h2>The Coffee Quiz</h2>
+<p>
+<script type="text/javascript">
+
+<!--
+    // Place this for loop where you want to quiz to be displayed.   
+    for (var i = 0; i < quiz.length; i++) {
+    quiz[i].showForm(i);
+    }
+    // BUG FIX: In Netscape 3 and greater, forms are not reset on reload.
+    // This for loop is used to automatically reset the quiz forms if the 
+    // user reloads the page. If not for this fix, whenever the quiz is
+    // reloaded, the radio button choices on the page stay the same but 
+    // the user's choices in the memory will be reset. This means
+    // the choices on the page are different than the ones in memory!
+    if (navigator.appName == "Netscape" && 
+        parseInt(navigator.appVersion) >= 3) {
+        for (var i = 0; i < document.forms.length; i++) {
+        document.forms[i].reset();
+        }
+    }
+//-->
+
+</script>
+
+
+<a href = "javascript:correctQuiz()">Correct Quiz</a>
+<p><a href= http://newsblaze.com/story/20060308082224nnnn.nb/topstory.html>Question from New Blaze</a>
+</body>
+</html>

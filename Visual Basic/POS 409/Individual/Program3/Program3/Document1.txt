@@ -1,0 +1,19 @@
+function NumericOnly()
+{
+   //get value of key just pressed
+   var keyCode = window.event.keyCode;
+
+   //check to see if key pressed was 0 through 9
+   if ( keyCode > 47 && keyCode < 58 )
+      //numeric value so do nothing
+      return;
+   else if (keyCode = 8)
+   //backspace
+   return;
+   else if (keyCode = 46)
+   //decimal point
+   return;
+   else
+      //they tried non-numeric value,
+      window.event.returnValue = null; 
+}

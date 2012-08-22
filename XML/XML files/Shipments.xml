@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<!-- This file is for the Team B Project -->
+<ship:shipments xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+              xmlns:ship="http://riordan/teamB/ns"
+              xsi:schemaLocation="http://riordan/teamB/ns TeamB.xsd">
+<shipment>
+	<order_num>1138</order_num>
+	<customer_number>0001</customer_number>
+	<tracking_number>123456789</tracking_number>
+	<ship_date>2009-04-01</ship_date>
+	<eta>2009-04-10</eta>
+</shipment>
+</ship:shipments>

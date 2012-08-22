@@ -1,0 +1,147 @@
+body {
+background-color:black;
+}
+
+a{
+color:black;}
+
+
+
+ #banner {
+width:90%; 
+height:30px;
+ background:url(back.gif) repeat;
+  float:left;
+  margin-left:25px;
+  top:30px;
+  
+}
+
+#menu {
+width:82%; 
+height:30px;
+  background-color: #e3d4bc;
+  float:left;
+  margin-left:83px;
+  margin-top:150px;
+  text-align:center;
+}
+
+#body {
+width:82%; 
+  background-color: #e3d4bc;
+  float:left;
+  margin-left:83px;
+  margin-top:20px;
+  padding-bottom:20px;
+
+ }
+
+
+
+ {
+     margin: 0;
+ }
+ html, body {
+     height: 100%;
+margin:15px;
+
+
+
+ }
+ .wrapper {
+     min-height: 100%;
+    height: auto !important;
+     height: 100%;
+ margin: 0 auto;
+background:url(back.gif) repeat;
+overflow:auto;
+position:float;
+
+ }
+ 
+#footer {
+width: 100%;
+margin:0px auto;
+background:url(back.gif) repeat;
+padding: 40px 0;
+float:left;
+height: 100px;
+color:white;
+text-align:center;
+font-size:10pt;
+} 
+
+
+#box1{
+float:left;
+width:auto;
+height:auto;
+margin-left:1em;
+margin-top:3em;
+}
+
+#box2{
+float:right;
+width:40%;
+height:250px;
+margin-right:1em;
+font-size:10pt;
+color:maroon;
+margin-top:3em;
+
+}
+#funbox{
+float:left;
+width:25%;
+height:auto;
+margin-left:1em;
+margin-top:3em;
+border:maroon dotted;
+text-align:center;
+}
+
+hr {
+color:maroon;
+}
+
+.list{
+margin-bottom:5px;
+}
+
+.list2{
+margin-bottom:1em;
+margin-left:5em;
+}
+
+#box3{
+float:left;
+width:95%;
+height:250px;
+margin:1em;
+align:center;
+color:maroon;
+text-align:center;
+height:auto;
+font-size:10pt;
+
+}
+
+
+p {
+text-indent: 2.5em; 
+margin-left:2em;
+margin-right:2em;
+}
+
+
+h2
+{
+text-align:center;
+}
+
+h1{
+font-size: x-small;
+font-family: Arial;
+text-align:center;
+}

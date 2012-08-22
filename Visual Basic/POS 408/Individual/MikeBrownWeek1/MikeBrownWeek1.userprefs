@@ -1,0 +1,26 @@
+﻿<Properties>
+  <MonoDevelop.Ide.Workbench ActiveDocument="MikeBrownWeek1/Form1.Designer.vb" ctype="Workbench">
+    <Files>
+      <File FileName="MikeBrownWeek1/Form1.vb" Line="3" Column="1" />
+      <File FileName="MikeBrownWeek1/Form1.Designer.vb" Line="210" Column="40" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State expanded="True">
+          <Node name="MikeBrownWeek1" expanded="True">
+            <Node name="Form1.vb" expanded="True">
+              <Node name="Form1.Designer.vb" selected="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+      <Pad Id="ClassPad">
+        <State expanded="True" selected="True" />
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" ctype="Workspace" />
+</Properties>

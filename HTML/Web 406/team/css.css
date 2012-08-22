@@ -1,0 +1,71 @@
+body {
+background-color:black;
+}
+
+a{
+color:black;}
+
+
+
+ #banner {
+width:90%; 
+height:30px;
+ background:url(back.gif) repeat;
+  float:left;
+  margin-left:25px;
+  top:30px;
+  
+}
+
+#menu {
+width:82%; 
+height:30px;
+  background-color: #e3d4bc;
+  float:left;
+  margin-left:83px;
+  margin-top:150px;
+  text-align:center;
+}
+
+#body {
+width:82%; 
+
+    background-color: #e3d4bc;
+  float:left;
+  margin-left:83px;
+  margin-top:20px;
+  padding-bottom:20px;
+ }
+
+
+
+ {
+     margin: 0;
+ }
+ html, body {
+     height: 100%;
+margin:15px;
+
+
+
+ }
+ .wrapper {
+     min-height: 100%;
+    height: auto !important;
+     height: 100%;
+ margin: 0 auto -142px;
+background:url(back.gif) repeat;
+overflow:auto;
+position:float;
+
+ }
+ 
+#footer {
+width: 100%;
+margin: 0px auto;
+background:url(back.gif) repeat;
+padding: 5px 0;
+float:left;
+height: 100px;
+} 
+

@@ -1,0 +1,236 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>Submit</title>
+<link type="text/css" rel="stylesheet" href="css.css"/>
+<style type="text/css">
+
+form {
+font-size: 12pt;
+font-family: verdana,sans-serif;
+background-color: #e3d4bc; }
+
+button {
+color: white;
+background-color: black;
+border: silver outset thick;
+margin-right: .5em;
+text-align: center;
+font-weight: bold;
+font-size: 12pt;
+font-family: arial,helvetica,sans-serif; 
+align:center;}
+
+h1{
+font-size:14pt;
+text-align:center;
+}
+
+h3{
+font-size:10pt;
+text-align:center;
+}
+
+body {
+background-color: black;
+
+}
+
+
+</style>
+<script type="text/javascript">
+
+function validate_required(field,alerttxt)
+{
+with (field)
+{
+if (value==null||value=="")
+{alert(alerttxt);return false}
+else {return true}
+}
+}
+
+function validate_mail(field)
+{
+with (field)
+{
+if (value==null||value=="")
+{return false}
+else {return true}
+}
+}
+
+function validate_email(field,alerttxt)
+{
+with (field)
+{
+apos=value.indexOf("@")
+dotpos=value.lastIndexOf(".")
+if (apos<1||dotpos-apos<2)
+{alert(alerttxt);return false}
+else {return true}
+}
+
+}
+
+function validate_form(thisform)
+{
+with (thisform)
+{
+if (validate_required(name,"Please enter your name!")==false)
+{name.focus();return false}
+
+if (validate_mail(address1)==false)
+
+{
+	if (validate_email(email,"You must provide either an address or a valid email")==false)
+	{name.focus();return false}
+	else 
+	{location.assign('confirm.html', 'popup', 640, 480); return true;}
+}
+
+if (validate_mail(address1)==true)
+
+{
+	if (validate_required(zipcode,"You must include your zip code!")==false)
+	{name.focus();return false}
+	else 
+	{location.assign('confirm.html', 'popup', 640, 480); return true;}
+
+}
+
+
+}
+}
+
+
+function confreset(form) {
+if (confirm("Are you sure you want to reset the form?")) {
+form.reset();
+}
+
+else {
+alert("You decided to not to reset the form!");
+}
+}
+
+function email(url, name, w, h)
+{
+w += 32;
+h += 96;
+ var win = window.open(url,
+  name,
+  'width=' + w + ', height=' + h + ', ' +
+  'location=no, menubar=no, ' +
+  'status=no, toolbar=no, scrollbars=no, resizable=no');
+ win.resizeTo(w, h);
+ win.focus();
+}
+
+//Getting the cookie to work!
+
+var Term = "365";
+var CookieName = "Doodle";
+Term = parseInt(Term);
+var Value = 'bypass';
+var RedirectURL = "confirm2.html";
+
+function Action() {
+location.href = RedirectURL;
+}
+
+
+function GetCookie() {
+var cookiecontent = '';
+if(document.cookie.length > 0) {
+   var cookiename = CookieName + '=';
+   var cookiebegin = document.cookie.indexOf(cookiename);
+   var cookieend = 0;
+   if(cookiebegin > -1) {
+      cookiebegin += cookiename.length;
+      cookieend = document.cookie.indexOf(";",cookiebegin);
+      if(cookieend < cookiebegin) { cookieend = document.cookie.length; }
+      cookiecontent = document.cookie.substring(cookiebegin,cookieend);
+      }
+   }
+if(cookiecontent.length > 0) { return true; }
+return false;
+}
+
+
+function SetCookie() {
+var exp = '';
+if(Term > 0) {
+   var now = new Date();
+   then = now.getTime() + (Term * 24 * 60 * 60 * 1000);
+   now.setTime(then);
+   exp = '; expires=' + now.toGMTString();
+   }
+document.cookie = CookieName + '=' + Value + exp;
+return true;
+}
+
+if(GetCookie() == true) { Action(); }
+
+
+</script>
+</head>
+<body>
+
+<form name="submit" action="mailto:somebody@nobody" method="post" enctype="text/plain"
+ onsubmit="return validate_form(this)">
+<h1><strong>Please complete the Doodle Coffee form below to join our mailing list!<br><br> After Completion use the submit button to complete the subscription.</strong></h1>
+<hr>
+<table>
+<tr>
+<td>Name</td>
+<td><input type="text" name="name" size="25" maxlength="30">*</td>
+</tr>
+<tr>
+
+<td>Address 1</td>
+<td><input type="text" name="address1" size="25">**</td>
+</tr>
+<tr>
+<td>Address 2</td>
+<td><input type="text" name="address2" size="25"></td>
+</tr>
+<tr>
+<td>City</td>
+<td><input type="text" name="city" size="25"></td>
+</tr>
+<tr>
+<td>State</td>
+<td><input type="text" name="state" size="2"></td>
+</tr>
+<tr>
+<td>Zip</td>
+<td><input type="text" name="zipcode" size="5">*!*</td>
+</tr>
+<tr>
+<td>Phone</td><td> <input type="text" name="phone" size="3"> - <input type="text" name="plus3" size="3"> - <input type="text" name="plus4" size="4"></td>
+</tr>
+<tr>
+<td>Email</td>
+<td><input type="text" name="email" size="25">**</td>
+</tr>
+<tr>
+<td>
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td class="center" colspan="2"><button type="submit" onClick="SetCookie();" value="Upload File">Submit</button></td>
+<td class="center" colspan="2"><button type="button" onClick="confreset(this.form);" value="Reset">Reset</button></td>
+</tr>
+</table>
+<hr>
+<h3><strong>* Fields are required to be filled out.<br>** You must fill out at least one of these fields.<br>*!*If you choose address the zip code is also required.</strong></h3>
+
+
+
+</form>
+</body>
+</html>

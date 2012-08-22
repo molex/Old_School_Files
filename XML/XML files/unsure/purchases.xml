@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<!-- This file is for the Team B Project -->
+<purchases>
+<purchase>
+	<description>clear pellets</description>
+	<part_number>123</part_number>
+	<quantity>10000</quantity>
+	<cost>.01</cost>
+</purchase>
+<purchase>	
+	<description>colored pellets</description>
+	<part_number>321</part_number>
+	<quantity>10000</quantity>
+	<cost>.02</cost>
+</purchase>
+</purchases>

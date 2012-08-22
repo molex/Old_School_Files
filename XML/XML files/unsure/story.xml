@@ -1,0 +1,11 @@
+<?xml version="1.0" ?>
+<!-- This file is for the Team B Project -->
+<!DOCTYPE story
+[
+	<!ELEMENT story (hero, villian, plot)>
+]>
+<story>
+<hero>Tux, the Linux Penguin</hero>
+<villian>Microsoft</villian>
+<plot>&hero; must face off against the &villian; in an epic battle to control the computing world"</plot>
+</story>

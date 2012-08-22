@@ -1,0 +1,61 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+		
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+
+<title>Multimedia</title>
+
+<meta http-eqiv="content-type" content="text/html; charset= iso-8859-1" />
+
+<link rel="stylesheet" href="kudler.css" type="text/css" />
+
+<script type="text/javascript">
+
+function EvalSound(soundobj) {
+  var thissound=document.getElementById(soundobj);
+  thissound.Play();
+}
+
+
+
+</script>
+
+
+</head>
+
+<body>
+
+
+<h1>Multimedia test page</h1>
+<hr></hr>
+<h2>Clock applet (recieved from: http://www.javascriptkit.com/java/java21.shtml, 2009):</h2>
+<applet code="billsClock.class" width="100" height="100">
+  <param name="BGCOLOR" value="000000">
+  <param name="FACECOLOR" value="FFFFFF">
+  <param name="SWEEPCOLOR" value="FF0000">
+  <param name="MINUTECOLOR" value="008080">
+  <param name="HOURCOLOR" value="000080">
+  <param name="TEXTCOLOR" value="000000">
+  <param name="CASECOLOR" value="000080">
+  <param name="TRIMCOLOR" value="C0C0C0">
+  <param name="LOGOIMAGEURL" value="java.gif">
+  <param name="LOCALONLY" value="1">
+</applet>
+
+<p align="center"><font face="arial" size="-2">Free Java applets provided by</font><br>
+<font face="arial, helvetica" size="-2"><a href="http://javascriptkit.com">JavaScript
+Kit</a></font></p>
+ <hr></hr>
+ 
+<h2>Video:</h2>
+
+<object width="425" height="344"><param name="movie" value="http://www.youtube.com/v/-i9HHlRvUhc&hl=en&fs=1"></param><param name="allowFullScreen" value="true"></param><param name="allowscriptaccess" value="always"></param><embed src="http://www.youtube.com/v/-i9HHlRvUhc&hl=en&fs=1" type="application/x-shockwave-flash" allowscriptaccess="always" allowfullscreen="true" width="425" height="344"></embed></object>
+
+<h2>Sound</h2>
+<embed src="cashtill.wav" autostart=false width=0 height=0 id="cashtill" enablejavascript="true">
+<input type="button" value="Coupons" onClick="EvalSound('cashtill')" />
+</body>
+
+</html>

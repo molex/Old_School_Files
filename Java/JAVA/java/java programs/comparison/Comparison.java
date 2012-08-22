@@ -1,0 +1,47 @@
+//comparison
+//Mike Brown
+
+import java.util.Scanner;//using class scanner
+
+
+public class Comparison 
+{
+	//main method begins
+	public static void main (String[] args)
+		{
+			//create scanner
+			Scanner input = new Scanner ( System.in);
+			int number1;
+			int number2;
+			
+			System.out.print( "Enter first integer: ");
+			number1 = input.nextInt();
+			
+			System.out.print( "Enter second integer: ");
+			number2 = input.nextInt();
+			
+			
+			if (number1 == number2 )
+				System.out.printf( "%d == %d\n", number1, number2 );
+				
+			if (number1!= number2)
+				System.out.printf( "%d != %d\n" , number1, number2 );
+				
+			if (number1 < number2 )
+				System.out.printf( "%d < %d\n" , number1, number2);
+				
+			if (number1 > number2 )
+				System.out.printf( "%d > %d\n" , number1, number2);
+				
+			if (number1 <= number2 )
+				System.out.printf( "%d <= %d\n" , number1, number2);
+				
+			if (number1 >= number2 )
+				System.out.printf( "%d >= %d\n" , number1, number2);
+									
+}//end main
+
+   
+    
+    
+}//end class

@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--Schema for the Team B Riordan Manufacturing Project-->
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://riordan/teamB/ns" targetNamespace="http://riordan/teamB/ns">
+<xsd:annotation>
+		<xsd:documentation>
+        This schema contains element and attribute declarations
+        for Riordan Manufacturing's databases.This Schema was created by Team B.
+     </xsd:documentation>
+	</xsd:annotation>
+	<xsd:element name="Customers">
+		<xsd:complexType>
+			<xsd:sequence>
+				<xsd:element name="Customer" maxOccurs="unbounded">
+					<xsd:complexType>
+						<xsd:sequence>
+							<xsd:element name="name" type="xsd:string"/>
+							<xsd:element name="street_address" type="xsd:string"/>
+							<xsd:element name="city" type="xsd:string"/>
+							<xsd:element name="state" type="xsd:string"/>
+							<xsd:element name="zipcode" type="xsd:nonNegativeInteger"/>
+							<xsd:element name="phone" type="xsd:string"/>
+							<xsd:element name="customer_number" type="xsd:string" />
+						</xsd:sequence>
+					</xsd:complexType>
+				</xsd:element>
+			</xsd:sequence>
+		</xsd:complexType>
+	</xsd:element>
+	<xsd:element name="orders">
+		<xsd:complexType>
+			<xsd:sequence>
+				<xsd:element name="order" maxOccurs="unbounded">
+					<xsd:complexType>
+						<xsd:sequence>
+							<xsd:element name="customer_number" type="xsd:nonNegativeInteger"/>
+							<xsd:element name="order_num" type="xsd:nonNegativeInteger"/>
+							<xsd:element name="item_number" type="xsd:nonNegativeInteger"/>
+							<xsd:element name="qty" type="xsd:integer"/>
+							<xsd:element name="tracking_number" type="xsd:string"/>
+						</xsd:sequence>
+					</xsd:complexType>
+				</xsd:element>
+			</xsd:sequence>
+		</xsd:complexType>
+	</xsd:element>
+	<xsd:element name="shipments">
+		<xsd:complexType>
+			<xsd:sequence>
+				<xsd:element name="shipment" maxOccurs="unbounded">
+					<xsd:complexType>
+						<xsd:sequence>
+							<xsd:element name="order_num" type="xsd:nonNegativeInteger"/>
+							<xsd:element name="customer_number" type="xsd:nonNegativeInteger"/>
+							<xsd:element name="tracking_number" type="xsd:string"/>
+							<xsd:element name="ship_date" type="xsd:date"/>
+							<xsd:element name="eta" type="xsd:date"/>
+						</xsd:sequence>
+					</xsd:complexType>
+				</xsd:element>
+			</xsd:sequence>
+		</xsd:complexType>
+	</xsd:element>
+	<xsd:element name="items">
+		<xsd:complexType>
+			<xsd:sequence>
+				<xsd:element name="item" maxOccurs="unbounded">
+					<xsd:complexType>
+						<xsd:sequence>
+							<xsd:element name="item_number" type="xsd:nonNegativeInteger"/>
+							<xsd:element name="description" type="xsd:string"/>
+							<xsd:element name="cost" type="xsd:decimal"/>
+							<xsd:element name="on_hand" type="xsd:integer"/>
+						</xsd:sequence>
+					</xsd:complexType>
+				</xsd:element>
+			</xsd:sequence>
+		</xsd:complexType>
+	</xsd:element>
+</xsd:schema>

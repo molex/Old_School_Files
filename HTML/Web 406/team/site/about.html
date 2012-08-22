@@ -1,0 +1,89 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>Doodle Coffee About</title>
+
+<link type="text/css" rel="stylesheet" href="css.css"/>
+
+<script type="text/javascript">
+
+<script type="text/javascript">
+
+adImages = new Array("header1.jpg","header2.jpg","header3.jpg")
+thisAd = 0
+imgCt = adImages.length
+
+function rotate() {
+if (document.images) {
+thisAd++
+if (thisAd == imgCt) {
+thisAd = 0
+}
+
+document.adBanner.src=adImages[thisAd]
+
+setTimeout("rotate()", 3 * 1000)
+
+}
+
+}
+
+
+</script>
+</head>
+<body onload="rotate()">
+
+<div class="wrapper">
+
+<div id="banner">
+<p.c1><img src="header1.jpg" name="adBanner" /></p>
+
+</div>
+
+
+<div id="menu">
+<table id="MainMenu" width="100%" border="5" cellspacing="0">
+<tr>
+<td><a href="index.html"><strong>Doodle Home</strong></a></td>
+<td><a href="about.html"><strong>About Doodle</strong></a></td>
+<td><a href="product.html"><strong>Order Doodle Coffee</strong></a></td>
+<td><a href="fun.html"><strong>Coffee Fun</strong></a></td>
+<td><a href="security.html"><strong>Security Policy</strong></a></td>
+</tr>
+
+</table>
+</div>
+
+<div id="body">
+<td><h2>The Doodle Coffee Co.</h2>
+<h1><em><strong>&ldquo;Doodle Coffee Company is an edgy and socially conscious company that produces a natural product for those living an active healthy lifestyle.&rdquo; </strong></em></h1>
+<h2>About Us&nbsp;</h2>
+<p>Doodle Coffee stocks are discriminately selected from the Worlds Finest Coffee plantations. All Coffees are of the highest grades available, we do not carry second grade Coffees. All Organic Coffee stocks have been certified under strict guidelines.</p>
+
+<p>With a wide selection of the world's finest gourmet coffee offerings, we cup test each origin to ensure it is the "best of class." We use a delicious Colombian Supremo base for our flavored coffees, leaving you with a one-stop shop for all your specialty green or roasted beans.</p>
+
+<p>At Doodle Coffee Company, we take pride in making sure that each bag of coffee you purchase will be of excellent quality and freshness. We select only 100% Arabica coffee beans that are hand-picked and tested for quality before we buy them from the growers. No matter how exotic the location (Central and South America, East Africa and Arabia, Indonesia and the Pacific) we seek only the finest crop offerings from the top growing regions in the world, and Doodle Coffee Company supports sustainability by using certified Organics, Rainforest and Fair Trade coffee whenever possible.</p>
+
+<p>We test every batch for quality after we roast it, and this ensures that you are getting the best tasting, top quality coffee, at affordable prices. We roast each variety of coffee bean the old- fashioned way— by hand, and in small batches. This allows us full control of the roasting process. After roasting the coffee beans, we immediately package and vacuum seal each batch of gourmet coffee to guarantee its freshness. Upon taking your first sip of your favorite Doodle coffee, you will immediately notice the care we take to assure that you are getting the best product we can deliver: coffee perfection!</p> 
+
+<p>Place your order today and see why everyone is talking about Doodle Coffee!</p> 
+</td>
+
+</p>
+</div>
+</div>
+
+<div class="push"></div>
+
+<div id="footer"style="border-bottom:black solid 45px;">
+Web-406 Team C
+
+<br>Michael Brown | Orland Laboy | Lori Matis | Robert Meeks | Rob Samuel
+<br>Design and Content From: Christopher Bean Coffee
+<br><a style="color:white"; href="http://www.christopherbean.com/">Christopher Bean Coffee's Web Site</strong></a>
+</div>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,47 @@
+/* Created by Michael Brown
+The file template.htm links to this stylesheet. */
+
+.tab
+{
+   BACKGROUND-COLOR:	#ffaaff;
+   BACKGROUND-REPEAT:	no-repeat;
+   BACKGROUND-IMAGE:	url("../images/tabL.gif");
+}
+.tabactive
+{
+   BACKGROUND-COLOR:	#ffccff;
+   BACKGROUND-REPEAT:	no-repeat;
+   BACKGROUND-IMAGE:	url("../images/tabLactive.gif");
+}
+.tabclose
+{
+   BACKGROUND-COLOR:	#ffffff;
+   BACKGROUND-REPEAT:	no-repeat;
+   BACKGROUND-IMAGE:	url("../images/tabR.gif");
+}
+.tabcloseactive
+{
+   BACKGROUND-COLOR:	#ffffff;
+   BACKGROUND-REPEAT:	no-repeat;
+   BACKGROUND-IMAGE:	url("../images/tabRactive.gif");
+}
+.tabbar
+{
+    BACKGROUND-COLOR: #ffaaff;
+}
+.tabbaractive
+{
+    BACKGROUND-COLOR:  #ffccff;
+}
+.style3 {color: #BE9DBD; font-weight: bold; }
+.style5 {color: #BE9DBD}
+a {color: #BE9DBD}
+.style6 {
+	font-size: 14px;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+}
+
+body {
+color: #ffccff;
+background-color: black;
+}

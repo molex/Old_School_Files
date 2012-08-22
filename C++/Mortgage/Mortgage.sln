@@ -1,0 +1,20 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Mortgage", "Mortgage.vcproj", "{2ECD48F4-F514-4B85-B2AE-67CB09C96729}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2ECD48F4-F514-4B85-B2AE-67CB09C96729}.Debug|Win32.ActiveCfg = Debug|Win32
+		{2ECD48F4-F514-4B85-B2AE-67CB09C96729}.Debug|Win32.Build.0 = Debug|Win32
+		{2ECD48F4-F514-4B85-B2AE-67CB09C96729}.Release|Win32.ActiveCfg = Release|Win32
+		{2ECD48F4-F514-4B85-B2AE-67CB09C96729}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

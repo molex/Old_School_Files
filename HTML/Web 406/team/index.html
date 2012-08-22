@@ -1,0 +1,98 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>Doodle Coffee Home</title>
+
+<link type="text/css" rel="stylesheet" href="css.css"/>
+
+<script type="text/javascript">
+
+adImages = new Array("header1.jpg","header2.jpg","header3.jpg")
+thisAd = 0
+imgCt = adImages.length
+
+function rotate() {
+if (document.images) {
+thisAd++
+if (thisAd == imgCt) {
+thisAd = 0
+}
+
+document.adBanner.src=adImages[thisAd]
+
+setTimeout("rotate()", 3 * 1000)
+
+}
+
+}
+
+
+</script>
+</head>
+<body onload="rotate()">
+
+<div class="wrapper">
+
+<div id="banner">
+<p><img src="header1.jpg" name="adBanner" /></p>
+</div>
+
+<div id="menu">
+<table id="MainMenu" width="100%" border="5" cellspacing="0" style="color: #e3d4bc;">
+<tr>
+<td><a href="index.html"><strong>Doodle Home</strong></a></td>
+<td><a href="about.html"><strong>About Doodle</strong></a></td>
+<td><a href="product.html"><strong>Doodle Products</strong></a></td>
+<td><a href="cart.html"><strong>Shopping Cart</strong></a></td>
+<td><a href="security.html"><strong>Security Policy</strong></a></td>
+</tr>
+</table>
+</div>
+
+<div id="body">
+<div id="box1">
+<img src="month.jpg" alt="monthly special">
+</div>
+<div id="box2">
+<p style="text-align:center;"><strong>Doodle Coffee has always been socially conscious about providing natural coffee for those living an active and healthy lifestyle. You didn’t know?
+<br>Well, it's not a secret any longer!</strong></p>
+
+<strong>
+<ul type="circle">
+<li class="list">Doodle Is Passionate About Coffee</li>
+<li class="list">All Natural - No Fillers or Substitutes</li>
+<li class="list"> Naturally Rich In Antioxidants</li>
+<li class="list">GMO-Free Flavored Coffee</li>
+<li class="list">Fair Trade & Organic Coffee Beans</li>
+<li class="list">Supports Fit & Healthy Lifestyles</li>
+<li>Guarantees You Are Going To Love It !</li>
+</ul>
+</strong>
+
+</div>
+
+<div id="box3">
+<h2><strong><em>Every Day Special - FREE Shipping On Any Gourmet Specialty Coffee Order Over $50</em><strong></h2>
+<p><img src="earth.png" name="earth friendly" />
+<img src="new.gif" name="new" />
+<img src="bold.png" name="bold" /></p>
+
+<p>For years our customers have counted on us to deliver fresh roast coffee along with some of the finest Specialty Coffees on the planet. Our passion for Gourmet Coffee goes beyond seeking out top quality coffee beans and producing unique flavored coffee. We use only the finest natural coffee beans that promote your healthy lifestyle and this ultimately works to ensure the sustainability of our Earth. Our flavored coffees are GMO-free and many of our decaf coffees are decaffeinated by using the Swiss water process.</p>
+
+<p>Doodle Coffee has always believed in the sustainability of our environment, and is progressing toward doing a better job of implementing these beliefs by making them a bigger part of how we operate our business. Some programs have changed in an effort to keep Doodle coffee one of the best values available to our thousands of customers, but our quality remains rock-solid. Thank You for your business! And please remember…
+<br>Live Your Passion, Love your coffee.</p>
+</div>
+
+</div>
+
+ <div id="footer"style="border-bottom:black solid 45px;">
+Web-406 Team C
+<br>Michael Brown | Orland Laboy | Lori Matis | Robert Meeks | Rob Samuel
+<br>Design and Content From: Christopher Bean Coffee
+<br><a style="color:white"; href="http://www.christopherbean.com/">Christopher Bean Coffee's Web Site</strong></a>
+</div>
+</div>
+
+</body>
+</html>
